@@ -26,8 +26,15 @@ body {
 	border: 1px solid #CCC;
 }
 #header {
+
 }
 #header h1 a {
+  display: block;
+  background-image: url("../resources/header.webp");
+  height: 140px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 #nav {
 	background-color: #000;
