@@ -26,13 +26,30 @@ body {
 	border: 1px solid #CCC;
 }
 
-a {
-  color: #CDE6FF;
+img {
+  border: 1px solid #000;
+  padding: 5px;
+  float: right;
+}
+
+p a {
+  padding: 3px;
+}
+
+/* Forgot how I did transitions last semester, think this way is a little different
+* but gives just about the same result I need. */
+p a:hover {
+  transition: background-color .3s, color .3s;
+  background-color: #DC8C8C;
+  border-radius: 5px;
+  color: #FFF;
 }
 
 #header {
 
 }
+
+
 #header h1 a {
   display: block;
   background-image: url("../resources/header.webp");
@@ -103,6 +120,11 @@ h4 {
   color: #ad5f47;
 }
 
+dt {
+  text-transform: uppercase;
+}
+
+
 .alert {
   background-color: #AF0000;
   padding: 5px;
@@ -111,6 +133,7 @@ h4 {
   text-align: center;
   font-weight: 650;
   color: #FFF;
+  max-width: 65%;
 }
 
 #footer {
@@ -124,4 +147,8 @@ h4 {
 	line-height: 25px;
 	margin-right: 20px;
 	margin-left: 20px;
+}
+
+#footer a {
+  color: #CDE6FF;
 }
