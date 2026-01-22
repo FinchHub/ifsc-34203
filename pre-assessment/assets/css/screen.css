@@ -25,6 +25,11 @@ body {
 	margin-top: 20px;
 	border: 1px solid #CCC;
 }
+
+a {
+  color: #CDE6FF;
+}
+
 #header {
 
 }
@@ -73,12 +78,48 @@ body {
 	margin-top: 5px;
 	margin-bottom: 15px;
 }
+
+h2 {
+  color: #df2e2f;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #300;
+}
+
+h3 {
+  border: 1px solid #000;
+  border-radius: 3px;
+  padding: 3px 5px 5px 5px;
+  font-size: 28px;
+  background-color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 1px 1px 3px #FFF;
+  color: #FFF;
+  box-shadow: 0px 0px 3px #000;
+}
+
+h4 {
+  color: #ad5f47;
+}
+
+.alert {
+  background-color: #AF0000;
+  padding: 5px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 2px #990000;
+  text-align: center;
+  font-weight: 650;
+  color: #FFF;
+}
+
 #footer {
 	background-color: #000;
 	color: #FFF;
-	height: 25px;
+	height: 50px;
 }
 #footer h6 {
+  text-align: center;
 	font-size: 12px;
 	line-height: 25px;
 	margin-right: 20px;
