@@ -18,14 +18,16 @@ html {
 }
 
 main {
-background-image: url("../img/grid.png");
-width: 956px;
+/* background-image: url("../img/grid.png"); */
+/* width: 956px; */
+width: 80vw;
 margin: 20px auto;
 border: 1px solid #000;  
 }
 
 header.primary, footer.primary{
- width:916px;
+ /* width:916px; */
+ width: 95.815%;
  background: rgba(0, 0, 0, 0.4);
  margin: 20px;
  padding: 20px;
@@ -33,7 +35,8 @@ header.primary, footer.primary{
 }
 
 #blog{
-  width: 682px;
+  /* width: 682px; */
+  width: 71.338%;
   margin-left: 20px;
   background: rgba(0, 0, 0, 0.6);
   padding: 20px;
@@ -42,7 +45,8 @@ header.primary, footer.primary{
 }
 
 aside {
-  width: 214px;
+ /* width: 214px; */
+  width: 22.384%;
   background: rgba(0, 0, 0, 0.3);
   margin-left: 20px;
   padding: 20px;
