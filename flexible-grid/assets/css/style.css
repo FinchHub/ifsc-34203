@@ -18,20 +18,20 @@ html {
 }
 
 main {
-/* background-image: url("../img/grid.png"); */
-/* width: 956px; */
-width: 80vw;
-margin: 20px auto;
-border: 1px solid #000;  
+  /* background-image: url("../img/grid.png"); */
+  /* width: 956px; */
+  width: 80vw;
+  margin: 20px auto;
+  border: 1px solid #000;  
 }
 
 header.primary, footer.primary{
- /* width:916px; */
- width: 95.815%;
- background: rgba(0, 0, 0, 0.4);
- margin: 20px;
- padding: 20px;
- float: left; 
+   /* width:916px; */
+   width: 95.815%;
+   background: rgba(0, 0, 0, 0.4);
+   margin: 20px;
+   padding: 20px;
+   float: left; 
 }
 
 #blog{
