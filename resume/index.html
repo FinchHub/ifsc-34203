@@ -1,178 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <meta charset="utf-8">
-  <title>Resume - Chance Crosson</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chance Crosson - Mobile Web</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <script src="../assets/js/script.js"></script>
   </head>
-  <header class="container" id="top">
-  <!-- Main navigation -->
-  <nav class="primary">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-    </ul>
-  </nav>
-</header>
 
-<!-- Main -->
-<main itemscope itemtype="https://schema.org/Person" class="container">
-  <h1 class="page-title" itemprop="name">Chance Crosson</h1>
 
-  <section id="about">
-    <h2>Personal Details</h2>
+<nav class="navbar">
+  <a href="/" class="nav-logo"></a>
+  <button class="nav-toggle" id="nav-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <ul class="nav-menu" id="nav-menu">
+    <li><a href='../index.html'>Home</a></li>
+    <li><a href=''>Projects</a></li>
+    <li><a href=".">Resume</a></li>
+  </ul>
+</nav>
 
-    <div class="bio">
-      <img itemprop="image" src="https://placehold.co/600x600?text=Headshot" alt="Your Name">
-      <p itemprop="description">
-I'm Chance, an infrastructure engineer/IT manager with a military background and a passion for computing and programming. Professionally, I specialize in building and maintaining server infrastructure for small to medium-sized companies, with a focus on automation, security, and uptime reliability.
-      </p>
-    </div>
-
-    <dl class="details">
-      <dt>Name</dt>
-      <dd itemprop="name">
-        <span itemprop="givenName">Chance</span> <span itemprop="familyName">Crosson</span>
-      </dd>
-
-      <dt>Date of birth</dt>
-      <dd><time itemprop="birthDate" datetime="2000-10-12">01/03/1998</time></dd>
-
-      <dt>Nationality</dt>
-      <dd itemprop="nationality">United States</dd>
-
-      <dt>Location</dt>
-      <!-- Keep original text, but model as Place for better schema correctness -->
-      <dd itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-        <span itemprop="name">Arkansas</span>
-      </dd>
-
-      <dt>Telephone</dt>
-      <dd>
-        <!-- tel: should be digits; keep visible text as-is -->
-        <a itemprop="telephone" href="tel:5555555555">555.555.555.5555</a>
-      </dd>
-
-      <dt>Email</dt>
-      <dd>
-        <a itemprop="email" href="mailto:email@mail.com">email@mail.com</a>
-      </dd>
-
-      <dt>Address</dt>
-      <dd itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-        <span itemprop="streetAddress">2801 South University</span>
-        <span itemprop="addressLocality">Little Rock</span>
-        <span itemprop="postalCode">72204</span>
-        <span itemprop="addressCountry">USA</span>
-      </dd>
-    </dl>
-
-    <ul class="related-links">
-      <li><a itemprop="sameAs" rel="me" href="https://github.com/profile"> github</a></li>
-      <li><a itemprop="sameAs" rel="me" href="http://linkedin.com/profile">linkedin</a></li>
-      <li><a itemprop="url" href="resume.pdf" download>pdf resume</a></li>
-    </ul>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li class="skill" itemprop="knowsAbout">Hardware Deployments</li>
-      <li class="skill" itemprop="knowsAbout">Infrastructure Management</li>
-      <li class="skill" itemprop="knowsAbout">IT Services and Support</li>
-      <li class="skill" itemprop="knowsAbout">Operational Security</li>
-    </ul>
-  </section>
-
-  <section id="experience">
-    <h2>Experience</h2>
-
-    <!-- current job -->
-    <article class="job">
-      <!-- jobTitle is valid on Person; this is still within Person scope -->
-      <h3 itemprop="jobTitle">IT Operations Manager</h3>
-
-      <!-- worksFor is valid on Person -->
-      <div itemprop="worksFor" itemscope itemtype="https://schema.org/Organization">
-        <span itemprop="name">Doxa Construction</span>
-        <span>July 2024 - Present</span>
-
-        <p itemprop="description">Designed and implemented standardized IT operating procedures and infrastructure (server, storage, backups, and security), creating a reliable, documented, and scalable internal IT environment. Utilized RAID and network attached storage solutions to ensure data availability and resilience while enhancing overall data security posture.</p>
-
-        <span itemprop="location" itemscope itemtype="https://schema.org/Place">
-          <a itemprop="url" href="https://doxaconstruction.com">Doxa Construction</a>
-          <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-            <span itemprop="addressLocality">Sherwood, AR, USA</span>
-          </span>
-        </span>
-      </div>
-    </article>
-
-    <!-- Previous Jobs -->
-    <article class="job">
-      <h3 itemprop="jobTitle">IT Asset Manager</h3>
-
-      <span itemprop="worksFor" itemscope itemtype="https://schema.org/Organization">
-        <span itemprop="name">US Army</span>
-
-        <span itemprop="location" itemscope itemtype="https://schema.org/Place">
-          <a itemprop="url" href="https://www.army.mil">Website</a>
-          <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-            <span itemprop="addressLocality">Fort Drum, NY, USA</span>
-          </span>
-        </span>
-      </span>
-
-      <!-- Keep original visible date format; Google won't bind it perfectly, but it won't warn -->
-      <div>
-        <span>July 2021</span> -
-        <span>July 2024</span>
-      </div>
-
-      <p itemprop="description">Conducted emergency hardware migrations of 12 terminals, 100+ end-user devices, and 65+ wireless access points during a critical security assessment, coordinating with teams of in-house technicians and off-site operations centers to maintain logistics operations with less than 1% downtime. Independently restored critical satellite equipment in a combat zone, reactivating stalled logistics operations and ensuring mission continuity while saving $8,000+ in replacement costs. Trained and supervised new soldiers in equipment maintenance and troubleshooting, reducing repair times by 30% and enhancing overall technical proficiency.</p>
-    </article>
-
-    <article class="job">
-      <h3 itemprop="jobTitle">IT Support Technician</h3>
-
-      <span itemprop="worksFor" itemscope itemtype="https://schema.org/Organization">
-        <span itemprop="name">Doxa Construction</span>
-
-        <span itemprop="location" itemscope itemtype="https://schema.org/Place">
-          <a itemprop="url" href="https://doxaconstruction.com">Website</a>
-          <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-            <span itemprop="addressLocality">Sherwood, AR, USA</span>
-          </span>
-        </span>
-      </span>
-
-      <div>
-        <span>May 2020</span> -
-        <span>June 2021</span>
-      </div>
-
-      <p itemprop="description">Managed IT support and cloud services for 40 devices throughout both office and construction environments, ensuring data access for all users with no more than 3% downtime. Engineered a cost-effective, temporary server solution with continuous file sync and remote backups, ensuring 97% availability and uptime for uninterrupted project management and bidding during infrastructure transition.</p>
-    </article>
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-
-    <article class="certificate" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
-      <h3 itemprop="description"><abbr title="Master of Science">BS</abbr> Computer Science</h3>
-      <span itemprop="name">University of Arkansas at Little Rock</span>
-      <span itemprop="location" itemscope>Little Rock, AR, USA</span>
-      <span>2025-2027</span>
-    </article>
-  </section>
-</main>
-
-<!-- Footer -->
-<footer>
-  <div id="copyright">
-    &copy; 2026 Chance Crosson | <a href="#top">Top</a>
-  </div>
-</footer>
-</html>
+<h1>Chance Crosson</h1>
 

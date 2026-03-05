@@ -1,9 +1,29 @@
-* {
- font: montserrat;
- background-color: #232323; 
- color: #FFF;
+:root {
+  --bg: #f5f2ee;
+  --surface: #edeae5;
+  --surface-secondary: #F1EFEB;
+  --text-primary: #1e1c1b;
+  --text-secondary: #6b6460;
+  --accent: #c9a87c;
 }
 
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+ font: montserrat;
+ /* background-color: #232323; */
+ background-color: var(--bg);
+ color: var(--text-primary);
+}
+
+/*
 body {
   display: grid;
   grid-template-columns: 1fr;
@@ -12,7 +32,77 @@ body {
   max-width: 80vw;
   margin: 20px auto;
 }
+*/
 
+body {
+  margin: 0;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem 1.0rem;
+  background: var(--surface);
+  margin: 0;
+}
+
+.nav-menu {
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 150px;
+  height: 100%;
+  background-color: var(--surface-secondary);
+  padding: 1rem 0;
+  list-style: none;
+  margin: 0;
+  border-radius: 0px 0px 10px 10px;
+
+  display: flex;
+  transform: translateX(100%);
+  visibility: hidden;
+  transition: transform 0.3s ease, visibility 0.3s ease;
+}
+
+.nav-menu.open {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+.nav-menu a {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  text-align: right;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: var(--surface-secondary);
+}
+
+.nav-toggle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+
+/* ---------- Body ---------- */
 header.primary {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -41,13 +131,13 @@ header.primary {
   margin: 10px;
   text-decoration: none;
   padding: 5px 0px;
-  background-color: #343434;
+  background-color: var(--surface);
   border-radius: 3px;
 }
 
 .content ul li a {
   text-decoration: none;
-  background-color: #343434;
+  background-color: var(--surface);
 }
 
 #projects {
