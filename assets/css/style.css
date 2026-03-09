@@ -1,26 +1,28 @@
 :root {
-  --bg: #f5f2ee;
-  --surface: #edeae5;
-  --surface-secondary: #F1EFEB;
-  --text-primary: #1e1c1b;
-  --text-secondary: #6b6460;
-  --accent: #c9a87c;
+    --bg: #f5f2ee;
+    --surface: #edeae5;
+    --surface-secondary: #F1EFEB;
+    --text-primary: #1e1c1b;
+    --text-secondary: #6b6460;
+    --accent: #c9a87c;
 }
 
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 * {
- font: montserrat;
- /* background-color: #232323; */
- background-color: var(--bg);
- color: var(--text-primary);
+    font-family: "Lato", sans-serif;
+
+    /* background-color: #232323; */
+    background-color: var(--bg);
+    color: var(--text-primary);
 }
 
 /*
@@ -35,144 +37,161 @@ body {
 */
 
 body {
-  margin: 0;
+    margin: 0;
+}
+
+main {
+    margin: 1vw;
 }
 
 /* ---------- Navbar ---------- */
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: .5rem 1.0rem;
-  background: var(--surface);
-  margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1.0rem;
+    background: var(--surface);
+    margin: 0;
 }
 
 .nav-menu {
-  flex-direction: column;
-  position: absolute;
-  top: 40px;
-  right: 0;
-  width: 150px;
-  height: 100%;
-  background-color: var(--surface-secondary);
-  padding: 1rem 0;
-  list-style: none;
-  margin: 0;
-  border-radius: 0px 0px 10px 10px;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 150px;
+    height: 100%;
+    background-color: var(--surface-secondary);
+    padding: 1rem 0;
+    list-style: none;
+    margin: 0;
+    border-radius: 0px 0px 10px 10px;
 
-  display: flex;
-  transform: translateX(100%);
-  visibility: hidden;
-  transition: transform 0.3s ease, visibility 0.3s ease;
+    display: flex;
+    transform: translateX(100%);
+    visibility: hidden;
+    transition: transform 0.3s ease, visibility 0.3s ease;
 }
 
 .nav-menu.open {
-  transform: translateX(0);
-  visibility: visible;
+    transform: translateX(0);
+    visibility: visible;
 }
 
 .nav-menu a {
-  display: block;
-  padding: 0.75rem 1.5rem;
-  color: var(--text-primary);
-  text-decoration: none;
-  text-align: right;
-  font-size: 1.1rem;
-  font-weight: 500;
-  background: var(--surface-secondary);
+    display: block;
+    padding: 0.75rem 1.5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    text-align: right;
+    font-size: 1.1rem;
+    font-weight: 500;
+    background: var(--surface-secondary);
 }
 
 .nav-toggle {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
 }
 
 .nav-toggle span {
-  display: block;
-  width: 24px;
-  height: 2px;
-  background: var(--text-primary);
-  transition: all 0.3s ease;
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--text-primary);
+    transition: all 0.3s ease;
 }
 
 
 /* ---------- Body ---------- */
 header.primary {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  border-bottom: 1px solid #FFF;
-  padding: 0px 0px;
-  text-align: center;
-  margin-bottom: 10px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    border-bottom: 1px solid #FFF;
+    padding: 0px 0px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .content {
-  border-radius: 5px;
-  padding: 5px 0px;
-  text-align: center;
+    border-radius: 5px;
+    padding: 5px 0px;
+    text-align: center;
 }
 
 .content * {
-  font-size: 1.2rem;
-  list-style-type: none;
-  padding: 0px;
+    font-size: 1.2rem;
+    list-style-type: none;
+    padding: 0px;
 }
 
-.content ul {
-}
+.content ul {}
 
 .content ul li {
-  margin: 10px;
-  text-decoration: none;
-  padding: 5px 0px;
-  background-color: var(--surface);
-  border-radius: 3px;
+    margin: 10px;
+    text-decoration: none;
+    padding: 5px 0px;
+    background-color: var(--surface);
+    border-radius: 3px;
 }
 
 .content ul li a {
-  text-decoration: none;
-  background-color: var(--surface);
+    text-decoration: none;
+    background-color: var(--surface);
 }
 
 #projects {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
 }
 
 #projects h3 {
-  font-size: 1.4rem;
+    font-size: 1.4rem;
 }
 
 #gridlab {
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+/* ------------ Resume Page ------------ */
+
+h1#resume-name {
+    text-align: center;
+    font-variant: small-caps;
+    margin-bottom: 10px;
 }
 
 
-@media screen and (width >= 40rem) {
-
+section#external-links {
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 10px;
 }
 
-@media screen and (width >= 48rem) {
-
+/* Had to look this up, it's to get the fade effect on that "bottom border". */
+section#external-links::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
 }
 
-@media screen and (width >= 64rem) {
+@media screen and (width >=40rem) {}
 
-}
+@media screen and (width >=48rem) {}
 
-@media screen and (width >= 80rem) {
+@media screen and (width >=64rem) {}
 
-}
+@media screen and (width >=80rem) {}
 
-@media screen and (width >= 96rem) {
-
-}
-
-
+@media screen and (width >=96rem) {}
