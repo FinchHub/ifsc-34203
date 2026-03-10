@@ -280,14 +280,85 @@ p#intro {
     line-height: 1.5;
 }
 
+.hidden {
+    display: none;
+}
 
 
-@media screen and (width >=40rem) {}
+@media screen and (min-width: 48rem) {
 
-@media screen and (width >=48rem) {}
 
-@media screen and (width >=64rem) {}
 
-@media screen and (width >=80rem) {}
+    /* ---------- Resume ---------- */
 
-@media screen and (width >=96rem) {}
+    .resume-info-top {
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            'resumename resumename'
+            'ext-links ext-links'
+            'information information'
+            'intro extrainfo';
+    }
+
+    #skills {
+        grid-area: skills;
+    }
+
+    #resume-name {
+        grid-area: resumename;
+    }
+
+    #external-links {
+        grid-area: ext-links;
+    }
+
+    #intro {
+        grid-area: intro;
+        border-right: 1px solid #000;
+    }
+
+    #information {
+        grid-area: information;
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    #expanded-info {
+        grid-area: extrainfo;
+        padding: 0 3vw;
+        margin-top: 1em;
+
+
+        & dl {
+            display: grid;
+            grid-template-columns: 1fr 6fr;
+            grid-template-rows: auto;
+            margin: 0;
+            font-size: .9rem;
+            line-height: 1.5;
+
+        }
+
+        & dt {
+            font-weight: 600;
+            font-variant: small-caps;
+        }
+
+        & dd {
+            margin-right: 0;
+            margin-bottom: 1vh;
+            text-align: end;
+        }
+
+    }
+}
+
+@media screen and (min-width >=64rem) {}
+
+@media screen and (min-width >=80rem) {}
+
+@media screen and (min-width >=96rem) {}
