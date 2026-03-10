@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="39.386902mm"
+   height="8.9491405mm"
+   viewBox="0 0 39.386902 8.9491405"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="ifsc.svg"
+   inkscape:export-xdpi="56.765224"
+   inkscape:export-ydpi="56.765224"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="39.386902"
+       height="8.9491405"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-39.351645,-133.24022)">
+    <text
+       xml:space="preserve"
+       style="font-weight:800;font-size:9.87777px;line-height:0;font-family:'Lexend Tera';-inkscape-font-specification:'Lexend Tera Ultra-Bold';letter-spacing:-0.6985px;writing-mode:lr-tb;direction:ltr;fill:#1a1a1a;stroke-width:0.264583"
+       x="46.321102"
+       y="141.34747"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="fill:#1a1a1a;stroke-width:0.264583"
+         x="46.321102"
+         y="141.34747">IFSC</tspan></text>
+  </g>
+  <path
+     sodipodi:type="star"
+     style="fill:#1a1a1a;stroke-width:0.264583"
+     id="path2"
+     inkscape:flatsided="false"
+     sodipodi:sides="3"
+     sodipodi:cx="44.116425"
+     sodipodi:cy="141.88795"
+     sodipodi:r1="2.5833943"
+     sodipodi:r2="5.1667886"
+     sodipodi:arg1="3.1415927"
+     sodipodi:arg2="4.1887902"
+     inkscape:rounded="0"
+     inkscape:randomized="0"
+     d="m 41.53303,141.88795 0,-4.47457 3.875092,2.23729 3.875091,2.23728 -3.875091,2.23729 -3.875092,2.23728 z"
+     inkscape:transform-center-x="-1.2916946"
+     transform="rotate(180,24.641607,73.181262)"
+     inkscape:transform-center-y="5.881374e-06" />
+</svg>
