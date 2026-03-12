@@ -1,11 +1,11 @@
 :root {
-  --bg: #f5f2ee;
-  --surface: #edeae5;
-  --surface-secondary: #f1efeb;
-  --card-light: #fefdfd;
-  --text-primary: #1e1c1b;
-  --text-secondary: #6b6460;
-  --accent: #c9a87c;
+  --bg: #faf7f2; /* was #f5f2ee — main page background */
+  --surface: #2c2416; /* was #edeae5 — your under-layer, now espresso */
+  --surface-secondary: #e8e0d4; /* was #f1efeb — subtle warm dividers/sections */
+  --card-light: #ffffff; /* was #fefdfd — no change needed, already white */
+  --text-primary: #2c2416; /* was #1e1c1b — slightly warmer dark */
+  --text-secondary: #8c7b65; /* was #6b6460 — warmer muted tone */
+  --accent: #c2410c; /* was #c9a87c — burnt orange replaces gold-tan */
 }
 
 html {
@@ -36,13 +36,15 @@ body {
 */
 
 body {
-  margin: 0;
-  background-color: var(--accent);
+  margin: 10px 0 0 0;
+  background-color: var(--surface);
   overflow-x: hidden;
+  padding-top: 60px;
 }
 
 main {
-  margin: 2vh 2vw;
+  margin: 0 auto;
+  max-width: 95vw;
   border: 1px solid transparent;
   border-radius: 5px;
   background-color: var(--bg);
@@ -51,13 +53,24 @@ main {
 /* ---------- Navbar ---------- */
 .navbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 0.8rem;
-  background: var(--surface);
-  margin: 0;
-  position: relative;
-  height: 40px;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(155, 155, 155, 0.4);
+  border-radius: 5px;
+  padding: 0 1rem;
+  width: 95vw;
+  margin: 1vh auto;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+
+  height: 48px;
 }
 
 .nav-logo {
@@ -67,6 +80,7 @@ main {
 
 .nav-logo img {
   max-height: 20px;
+  filter: invert(1);
 }
 
 .nav-menu {
@@ -119,7 +133,7 @@ main {
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--text-primary);
+  background: #fff;
   transition: all 0.3s ease;
 }
 
@@ -152,13 +166,13 @@ header.primary {
   margin: 10px;
   text-decoration: none;
   padding: 5px 0px;
-  background-color: var(--surface);
+  background-color: var(--card-light);
   border-radius: 3px;
 }
 
 .content ul li a {
   text-decoration: none;
-  background-color: var(--surface);
+  background-color: var(--card-light);
 }
 
 #projects {
@@ -250,8 +264,8 @@ p#intro {
   margin: 0vh 5vw;
   padding: 8px 0;
   border-radius: 5px;
-  background-color: var(--card-light);
-  box-shadow: 0px 0px 8px #000 inset;
+  /* background-color: var(--card-light);
+  box-shadow: 0px 0px 8px #000 inset; */
 }
 
 .job-company,
@@ -375,6 +389,51 @@ p#intro {
       text-align: end;
     }
   }
+
+  .job-infoblock {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    border-radius: 0px;
+    background-color: transparent;
+    box-shadow: none;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    & h3,
+    & .job-location {
+      text-align: start;
+    }
+
+    & .job-title {
+      font-weight: 600;
+      font-variant: small-caps;
+    }
+
+    & .job-title,
+    & .job-dates {
+      text-align: end;
+    }
+  }
+
+  .certification {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    border-radius: 0px;
+    background-color: transparent;
+    box-shadow: none;
+
+    & h3 {
+      text-align: left;
+    }
+
+    & p {
+      text-align: left;
+    }
+  }
 }
 
 @media screen and (min-width: 64rem) {
@@ -384,6 +443,15 @@ p#intro {
   .resume-main {
     margin: 3vh auto;
     max-width: 1000px;
+  }
+
+  .job-infoblock {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    border-radius: 0px;
+    background-color: transparent;
+    box-shadow: 0;
   }
 }
 
