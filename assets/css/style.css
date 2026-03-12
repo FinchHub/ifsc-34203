@@ -1,27 +1,27 @@
 :root {
-    --bg: #f5f2ee;
-    --surface: #edeae5;
-    --surface-secondary: #F1EFEB;
-    --card-light: #FEFDFD;
-    --text-primary: #1e1c1b;
-    --text-secondary: #6b6460;
-    --accent: #c9a87c;
+  --bg: #f5f2ee;
+  --surface: #edeae5;
+  --surface-secondary: #f1efeb;
+  --card-light: #fefdfd;
+  --text-primary: #1e1c1b;
+  --text-secondary: #6b6460;
+  --accent: #c9a87c;
 }
 
 html {
-    box-sizing: border-box;
-    overflow-x: hidden;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 * {
-    font-family: "Lato", sans-serif;
-    color: var(--text-primary);
+  font-family: "Lato", sans-serif;
+  color: var(--text-primary);
 }
 
 /*
@@ -36,227 +36,231 @@ body {
 */
 
 body {
-    margin: 0;
-    background-color: var(--accent);
-    overflow-x: hidden;
-
+  margin: 0;
+  background-color: var(--accent);
+  overflow-x: hidden;
 }
 
 main {
-    margin: 2vh 2vw;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    background-color: var(--bg);
-
+  margin: 2vh 2vw;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: var(--bg);
 }
 
 /* ---------- Navbar ---------- */
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: .5rem 0.8rem;
-    background: var(--surface);
-    margin: 0;
-    position: relative;
-    height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.8rem;
+  background: var(--surface);
+  margin: 0;
+  position: relative;
+  height: 40px;
 }
 
 .nav-logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .nav-logo img {
-    max-height: 20px;
+  max-height: 20px;
 }
 
-
 .nav-menu {
-    flex-direction: column;
-    position: absolute;
-    top: 40px;
-    right: 0;
-    width: 150px;
-    background-color: var(--surface-secondary);
-    padding: 1rem 0;
-    list-style: none;
-    margin: 0;
-    border-radius: 0px 0px 10px 10px;
-    display: flex;
-    transform: translateX(100%);
-    visibility: hidden;
-    transition: transform 0.3s ease, visibility 0.3s ease;
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 150px;
+  background-color: var(--surface-secondary);
+  padding: 1rem 0;
+  list-style: none;
+  margin: 0;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  transform: translateX(100%);
+  visibility: hidden;
+  transition:
+    transform 0.3s ease,
+    visibility 0.3s ease;
 }
 
 .nav-menu.open {
-    transform: translateX(0);
-    visibility: visible;
-    z-index: 98;
+  transform: translateX(0);
+  visibility: visible;
+  z-index: 98;
 }
 
 .nav-menu a {
-    display: block;
-    padding: 0.75rem 1.5rem;
-    color: var(--text-primary);
-    text-decoration: none;
-    text-align: right;
-    font-size: 1.2rem;
-    font-weight: 500;
-    font-variant: small-caps;
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-variant: small-caps;
 }
 
 .nav-toggle {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
 }
 
 .nav-toggle span {
-    display: block;
-    width: 24px;
-    height: 2px;
-    background: var(--text-primary);
-    transition: all 0.3s ease;
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text-primary);
+  transition: all 0.3s ease;
 }
-
 
 /* ---------- Body ---------- */
 header.primary {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    border-bottom: 1px solid #FFF;
-    padding: 0px 0px;
-    text-align: center;
-    margin-bottom: 10px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  border-bottom: 1px solid #fff;
+  padding: 0px 0px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .content {
-    border-radius: 5px;
-    padding: 5px 0px;
-    text-align: center;
+  border-radius: 5px;
+  padding: 5px 0px;
+  text-align: center;
 }
 
 .content * {
-    font-size: 1.2rem;
-    list-style-type: none;
-    padding: 0px;
+  font-size: 1.2rem;
+  list-style-type: none;
+  padding: 0px;
 }
 
-.content ul {}
+.content ul {
+}
 
 .content ul li {
-    margin: 10px;
-    text-decoration: none;
-    padding: 5px 0px;
-    background-color: var(--surface);
-    border-radius: 3px;
+  margin: 10px;
+  text-decoration: none;
+  padding: 5px 0px;
+  background-color: var(--surface);
+  border-radius: 3px;
 }
 
 .content ul li a {
-    text-decoration: none;
-    background-color: var(--surface);
+  text-decoration: none;
+  background-color: var(--surface);
 }
 
 #projects {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
 }
 
 #projects h3 {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 #gridlab {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
 }
 
 footer {
-    margin: 5vh 0 1vh;
-    text-align: center;
-    font-variant: small-caps;
+  margin: 5vh 0 1vh;
+  text-align: center;
+  font-variant: small-caps;
 }
 
 /* ------------ Resume Page ------------ */
 
 h1#resume-name,
 h2 {
-    text-align: center;
-    font-variant: small-caps;
-    margin-bottom: 10px;
+  text-align: center;
+  font-variant: small-caps;
+  margin-bottom: 10px;
 }
 
-
 section#external-links {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    position: relative;
-    padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+  padding-bottom: 10px;
 }
 
 /* Had to look this up, it's to get the fade effect on that "bottom border". */
 section#external-links::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    black 20%,
+    black 80%,
+    transparent
+  );
 }
 
 section#information {
-    display: flex;
-    justify-content: space-between;
-    padding: 3px 3vw;
-    font-variant: small-caps;
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 3vw;
+  font-variant: small-caps;
 }
 
 section#information p {
-    margin: 0;
+  margin: 0;
 }
 
 p#intro {
-    font-size: 1.1rem;
-    line-height: 1.5;
-    text-align: justify;
-    padding: 0 3vw;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: justify;
+  padding: 0 3vw;
 }
 
 #skills {
-    display: none;
+  display: none;
 }
 
 #skills ul {
-    list-style-type: none;
-    text-align: center;
-    padding-left: 0;
-    line-height: 1.5;
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0;
+  line-height: 1.5;
 }
 
 .job-infoblock,
 .certification {
-    border: 1px solid transparent;
-    margin: 0vh 5vw;
-    padding: 8px 0;
-    border-radius: 5px;
-    background-color: var(--card-light);
-    box-shadow: 0px 0px 8px #000 inset;
+  border: 1px solid transparent;
+  margin: 0vh 5vw;
+  padding: 8px 0;
+  border-radius: 5px;
+  background-color: var(--card-light);
+  box-shadow: 0px 0px 8px #000 inset;
 }
 
 .job-company,
 .cert-name {
-    margin: 0;
-    padding: 0 3vw;
-    font-size: 1.3rem;
-    font-variant: small-caps;
-    text-align: center;
+  margin: 0;
+  padding: 0 3vw;
+  font-size: 1.3rem;
+  font-variant: small-caps;
+  text-align: center;
 }
 
 .job-title,
@@ -264,125 +268,127 @@ p#intro {
 .job-dates,
 .issuer,
 .cert-dates {
-    margin: 0 0 3px;
-    padding: 0 3vw;
-    font-weight: 300;
-    text-align: center;
+  margin: 0 0 3px;
+  padding: 0 3vw;
+  font-weight: 300;
+  text-align: center;
 }
 
 .job-description {
-    position: relative;
-    margin: 10px 0px 50px;
-    padding: 0 3vw;
-    font-size: 1.1rem;
-    text-align: justify;
-    font-weight: 400;
-    line-height: 1.5;
+  position: relative;
+  margin: 10px 0px 50px;
+  padding: 0 3vw;
+  font-size: 1.1rem;
+  text-align: justify;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
-
 
 /* ---------- Media Queries ---------- */
 
 @media screen and (min-width: 48rem) {
-    /* -------- Index Page -------- */
+  /* -------- Index Page -------- */
 
+  /* ---------- Resume ---------- */
+  .resume-info-top {
+    width: 98%;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    padding-bottom: 1rem;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "resumename resumename"
+      "ext-links ext-links"
+      "information information"
+      "intro extrainfo";
+  }
 
-    /* ---------- Resume ---------- */
-    .resume-info-top {
-        width: 98%;
-        margin: 0 auto;
-        position: relative;
-        display: grid;
-        padding-bottom: 1rem;
-        grid-template-columns: 3fr 3fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-            'resumename resumename'
-            'ext-links ext-links'
-            'information information'
-            'intro extrainfo';
+  .resume-info-top::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      transparent,
+      black 20%,
+      black 80%,
+      transparent
+    );
+  }
+
+  #skills {
+    grid-area: skills;
+  }
+
+  #resume-name {
+    grid-area: resumename;
+  }
+
+  #external-links {
+    grid-area: ext-links;
+  }
+
+  #intro {
+    grid-area: intro;
+    border-right: 1px solid #000;
+  }
+
+  #information {
+    grid-area: information;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  #expanded-info {
+    grid-area: extrainfo;
+    padding: 0 3vw;
+    margin-top: 1em;
+
+    & dl {
+      display: grid;
+      grid-template-columns: 1fr 6fr;
+      grid-template-rows: auto;
+      margin: 0;
+      font-size: 0.9rem;
+      line-height: 1.5;
     }
 
-    .resume-info-top::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 1px;
-        background: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+    & dt {
+      font-weight: 600;
+      font-variant: small-caps;
     }
 
-    #skills {
-        grid-area: skills;
+    & dd {
+      margin-right: 0;
+      margin-bottom: 1vh;
+      text-align: end;
     }
-
-    #resume-name {
-        grid-area: resumename;
-    }
-
-    #external-links {
-        grid-area: ext-links;
-    }
-
-    #intro {
-        grid-area: intro;
-        border-right: 1px solid #000;
-    }
-
-    #information {
-        grid-area: information;
-    }
-
-    .hidden {
-        display: block;
-    }
-
-    #expanded-info {
-        grid-area: extrainfo;
-        padding: 0 3vw;
-        margin-top: 1em;
-
-
-        & dl {
-            display: grid;
-            grid-template-columns: 1fr 6fr;
-            grid-template-rows: auto;
-            margin: 0;
-            font-size: .9rem;
-            line-height: 1.5;
-
-        }
-
-        & dt {
-            font-weight: 600;
-            font-variant: small-caps;
-        }
-
-        & dd {
-            margin-right: 0;
-            margin-bottom: 1vh;
-            text-align: end;
-        }
-
-    }
+  }
 }
 
 @media screen and (min-width: 64rem) {
-    /* -------- Index Page -------- */
+  /* -------- Index Page -------- */
 
-
-    /* ---------- Resume ---------- */
-    .resume-main {
-        margin: 3vh auto;
-        max-width: 1000px;
-    }
+  /* ---------- Resume ---------- */
+  .resume-main {
+    margin: 3vh auto;
+    max-width: 1000px;
+  }
 }
 
-@media screen and (min-width >=80rem) {}
+@media screen and (min-width >=80rem) {
+}
 
-@media screen and (min-width >=96rem) {}
+@media screen and (min-width >=96rem) {
+}
