@@ -1,11 +1,13 @@
 :root {
-  --bg: #faf7f2; /* was #f5f2ee — main page background */
-  --surface: #2c2416; /* was #edeae5 — your under-layer, now espresso */
-  --surface-secondary: #e8e0d4; /* was #f1efeb — subtle warm dividers/sections */
-  --card-light: #ffffff; /* was #fefdfd — no change needed, already white */
-  --text-primary: #2c2416; /* was #1e1c1b — slightly warmer dark */
-  --text-secondary: #8c7b65; /* was #6b6460 — warmer muted tone */
-  --accent: #c2410c; /* was #c9a87c — burnt orange replaces gold-tan */
+  --bg: #0d1117;
+  --card: #161b22;
+  --border: #30363d;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --accent: #a78bfa;
+  --accent-lt: #1e1030;
+  --header-bg: #161b22;
+  --header-fg: #e6edf3;
 }
 
 html {
@@ -21,7 +23,7 @@ html {
 
 * {
   font-family: "Lato", sans-serif;
-  color: var(--text-primary);
+  color: var(--text);
 }
 
 /*
@@ -37,7 +39,7 @@ body {
 
 body {
   margin: 10px 0 0 0;
-  background-color: var(--surface);
+  background-color: var(--bg);
   overflow-x: hidden;
   padding-top: 60px;
 }
@@ -45,9 +47,6 @@ body {
 main {
   margin: 0 auto;
   max-width: 95vw;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  background-color: var(--bg);
 }
 
 /* ---------- Navbar ---------- */
@@ -56,7 +55,7 @@ main {
   justify-content: space-between;
   align-items: center;
 
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(32, 37, 44, 0.6);
   backdrop-filter: blur(6px);
   border: 1px solid rgba(155, 155, 155, 0.4);
   border-radius: 5px;
@@ -89,7 +88,7 @@ main {
   top: 40px;
   right: 0;
   width: 150px;
-  background-color: var(--surface-secondary);
+  background-color: var(--card);
   padding: 1rem 0;
   list-style: none;
   margin: 0;
@@ -111,7 +110,7 @@ main {
 .nav-menu a {
   display: block;
   padding: 0.75rem 1.5rem;
-  color: var(--text-primary);
+  color: var(--text);
   text-decoration: none;
   text-align: right;
   font-size: 1.2rem;
@@ -166,13 +165,14 @@ header.primary {
   margin: 10px;
   text-decoration: none;
   padding: 5px 0px;
-  background-color: var(--card-light);
+  background-color: var(--card);
   border-radius: 3px;
+  border: 1px solid var(--border);
 }
 
 .content ul li a {
   text-decoration: none;
-  background-color: var(--card-light);
+  background-color: var(--card);
 }
 
 #projects {
@@ -204,6 +204,10 @@ h2 {
   margin-bottom: 10px;
 }
 
+h2 {
+  color: var(--accent);
+}
+
 section#external-links {
   display: flex;
   justify-content: center;
@@ -213,7 +217,8 @@ section#external-links {
 }
 
 /* Had to look this up, it's to get the fade effect on that "bottom border". */
-section#external-links::after {
+section#external-links::after,
+section#information::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -223,13 +228,14 @@ section#external-links::after {
   background: linear-gradient(
     to right,
     transparent,
-    black 20%,
-    black 80%,
+    var(--muted) 20%,
+    var(--muted) 80%,
     transparent
   );
 }
 
 section#information {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding: 3px 3vw;
@@ -238,6 +244,7 @@ section#information {
 
 section#information p {
   margin: 0;
+  color: var(--muted);
 }
 
 p#intro {
@@ -245,6 +252,9 @@ p#intro {
   line-height: 1.5;
   text-align: justify;
   padding: 0 3vw;
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 5px;
 }
 
 #skills {
@@ -266,6 +276,12 @@ p#intro {
   border-radius: 5px;
   /* background-color: var(--card-light);
   box-shadow: 0px 0px 8px #000 inset; */
+}
+
+.certification {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 5px;
 }
 
 .job-company,
@@ -296,6 +312,10 @@ p#intro {
   text-align: justify;
   font-weight: 400;
   line-height: 1.5;
+
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 5px;
 }
 
 .hidden {
@@ -333,8 +353,8 @@ p#intro {
     background: linear-gradient(
       to right,
       transparent,
-      black 20%,
-      black 80%,
+      var(--muted) 20%,
+      var(--muted) 80%,
       transparent
     );
   }
@@ -353,7 +373,7 @@ p#intro {
 
   #intro {
     grid-area: intro;
-    border-right: 1px solid #000;
+    border-right: 1px solid var(--muted);
   }
 
   #information {
