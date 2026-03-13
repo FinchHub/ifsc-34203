@@ -50,6 +50,13 @@ main {
 }
 
 /* ---------- Navbar ---------- */
+
+/* Class Note: This nav took a long time to figure out. For the hamburger menu, I used AI for the
+* javascript since I haven't done any JS yet. I took a lot of visual inspiration from the navbar
+* over at https://few.io. My menu popout was originally a right slide-out, but I couldn't get it
+* looking quite the way I wanted it to so just went to a simple fade-in positioned between the nav
+* and the rest of the content with a background blur.*/
+
 .navbar {
   display: flex;
   justify-content: space-between;
