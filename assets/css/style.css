@@ -79,7 +79,6 @@ main {
 
 .nav-logo img {
   max-height: 20px;
-  filter: invert(1);
 }
 
 .nav-menu {
