@@ -1,0 +1,15 @@
+/* AI generated version of the code I built. Was also a little more complex since
+ * I was intending on the menu disappearing when the body was clicked. No longer possible. */
+const toggle = document.getElementById('nav-toggle');
+const menu = document.getElementById('nav-menu');
+
+toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    menu.classList.toggle('open');
+});
+
+document.addEventListener('click', (e) => {
+    if (!menu.contains(e.target)) {
+        menu.classList.remove('open');
+    }
+});

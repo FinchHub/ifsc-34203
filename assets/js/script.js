@@ -1,15 +1,11 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const toggle = document.getElementById('nav-toggle');
-    const menu = document.getElementById('nav-menu');
+/* In older versions of this repo, this JS was AI generated.i I didn't know how to code in JS
+ * and since the code wasn't extremely long, I was indifferent just generating it. Got tired of not 
+ * knowing it though, so I spent a couple days learning so I could rebuild it by hand. This is pretty
+ * dead simple, but is my first handwritten JS code that's actually going into a site I'm building.*/
 
-    toggle.addEventListener('click', (e) => {
-        e.stopPropagation();
-        menu.classList.toggle('open');
-    });
+const toggle = document.getElementById('nav-toggle');
+const menu = document.getElementById('nav-menu');
 
-    document.addEventListener('click', (e) => {
-        if (!menu.contains(e.target)) {
-            menu.classList.remove('open');
-        }
-    });
-});
+
+toggle.addEventListener("click", () =>
+    menu.classList.toggle("open"))
