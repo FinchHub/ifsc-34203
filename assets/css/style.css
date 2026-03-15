@@ -232,7 +232,7 @@ header.primary h2 {
   align-items: center;
   font-variant: small-caps;
   text-decoration: none;
-  background-color: rgba(22, 27, 34, 0.6);
+  background-color: rgba(22, 27, 34, 0.3);
   font-size: clamp(1.2rem, 5vw, 2.5rem);
   width: 100%;
   height: 100%;
