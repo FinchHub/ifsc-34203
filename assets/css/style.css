@@ -42,6 +42,8 @@ body {
   background-color: var(--bg);
   overflow-x: hidden;
   padding-top: 60px;
+
+
 }
 
 main {
@@ -150,13 +152,39 @@ main {
 
 /* ---------- Body ---------- */
 header.primary {
+  position: relative;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-  border-bottom: 1px solid #fff;
   padding: 0px 0px;
   text-align: center;
   margin-bottom: 10px;
 }
+
+header.primary::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right,
+      transparent,
+      var(--muted) 20%,
+      var(--muted) 80%,
+      transparent);
+}
+
+header.primary h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+  font-variant: small-caps;
+}
+
+header.primary h2 {
+  font-size: 1rem;
+}
+
+
 
 .content {
   border-radius: 5px;
@@ -170,35 +198,60 @@ header.primary {
   padding: 0px;
 }
 
-.content ul {}
+.content ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 2rem;
+  margin: 0 4vw;
+
+
+
+}
 
 .content ul li {
-  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   text-decoration: none;
-  padding: 5px 0px;
-  background-color: var(--card);
+  background-color: rgba(22, 27, 34, 0.6);
   border-radius: 3px;
   border: 1px solid var(--border);
+  aspect-ratio: 1;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  background-image: url('../img/bg-circuit.svg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
 }
 
 .content ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-variant: small-caps;
   text-decoration: none;
-  background-color: var(--card);
+  background-color: rgba(22, 27, 34, 0.6);
+  font-size: clamp(1.2rem, 5vw, 2.5rem);
+  width: 100%;
+  height: 100%;
+  margin: 0 0;
+  padding: 1rem;
 }
 
 #projects {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+  margin-top: 10px;
 }
 
 #projects h3 {
   font-size: 1.4rem;
 }
 
-#gridlab {
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
-}
+#gridlab ul {}
 
 footer {
   margin: 5vh 0 1vh;
@@ -227,7 +280,7 @@ section#external-links {
   padding-bottom: 10px;
 }
 
-/* Had to look this up, it's to get the fade effect on that "bottom border". */
+/* Had to look this up, it's to get the fade-out effect on the "border" lines. */
 section#external-links::after,
 section#information::after {
   content: "";
@@ -289,6 +342,7 @@ p#intro {
 }
 
 .certification {
+  max-width: fit-content;
   background-color: var(--card);
   border: 1px solid var(--border);
   border-radius: 5px;
@@ -340,11 +394,13 @@ p#intro {
 
 /* ---------- Media Queries ---------- */
 
+/* 768px */
 @media screen and (min-width: 48rem) {
 
   /* -------- Navbar -------- */
 
   /* -------- Index Page -------- */
+  .content {}
 
   /* ---------- Resume ---------- */
   .resume-info-top {
@@ -388,9 +444,17 @@ p#intro {
     grid-area: ext-links;
   }
 
-  #intro {
+  #external-links a img {}
+
+  #external-links a img:hover {
+    transform: scale(1.30);
+    transition: ease 0.2s;
+  }
+
+  p#intro {
     grid-area: intro;
-    border-right: 1px solid var(--muted);
+    padding: 5px 15px;
+    margin: 2vh 2vw 30px;
   }
 
   #information {
@@ -410,7 +474,6 @@ p#intro {
       display: grid;
       grid-template-columns: 1fr 6fr;
       grid-template-rows: auto;
-      margin: 0;
       font-size: 0.9rem;
       line-height: 1.5;
     }
@@ -461,19 +524,16 @@ p#intro {
   }
 
   .certification {
-    border: 0;
-    margin: 0;
-    padding: 0;
-    border-radius: 0px;
-    background-color: transparent;
-    box-shadow: none;
+    max-width: fit-content;
+    margin: 2vh auto;
+    padding: 1vh 0;
 
     & h3 {
-      text-align: left;
+      text-align: center;
     }
 
     & p {
-      text-align: left;
+      text-align: center;
     }
   }
 }
@@ -495,6 +555,7 @@ p#intro {
     background-color: transparent;
     box-shadow: 0;
   }
+
 }
 
 @media screen and (min-width >=80rem) {}
