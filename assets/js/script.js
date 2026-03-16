@@ -10,13 +10,3 @@ const menu = document.getElementById('nav-menu');
 toggle.addEventListener("click", () =>
     menu.classList.toggle("open"))
 
-/* Had AI help with this one. Needed to put a delay on the cards to show the animation. */
-document.querySelectorAll('.content ul li').forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const href = this.href;
-        setTimeout(() => {
-            window.location = href;
-        }, 200);
-    });
-});
