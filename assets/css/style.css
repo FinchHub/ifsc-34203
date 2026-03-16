@@ -59,7 +59,7 @@ main {
 * but rebuilt it by hand once I spent a day learning it. I took a lot of visual inspiration from the navbar
 * over at https://few.io. My menu popout was originally a slide-out, but I couldn't get it
 * looking the way I wanted it to so just went to a simple fade-in positioned between the nav
-* and the rest of the content with a background blur.*/
+* and the rest of the content with a background blur. */
 
 .navbar {
   display: flex;
@@ -406,7 +406,32 @@ p#intro {
   /* -------- Navbar -------- */
 
   /* -------- Index Page -------- */
-  .content {}
+
+  /* Set these all on clamps but honestly not sure if they're working. */
+  header.primary h1,
+  #projects h3,
+  #gridlab h3 {
+    font-size: clamp(1.4rem, 6vw, 2.5rem);
+  }
+
+  header.primary h2 {
+    font-size: clamp(1rem, 6vw, 1.4rem);
+  }
+
+  .content ul {
+    align-items: start;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    max-width: 80rem;
+  }
+
+  .content ul li {
+    overflow: hidden;
+  }
+
+  .content ul li a {
+    font-size: clamp(1rem, 3vw, 2.5rem);
+  }
 
   /* ---------- Resume ---------- */
   .resume-info-top {
