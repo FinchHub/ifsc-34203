@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 400 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="flare1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="flare2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="flare3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c6bd6" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="dot" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+    </style>
+  </defs>
+
+  <!-- base fill -->
+  <rect width="400" height="900" fill="#0d1117"/>
+
+  <!-- large soft flares -->
+  <ellipse class="f1" cx="320" cy="120" rx="200" ry="180" fill="url(#flare1)"/>
+  <ellipse class="f2" cx="60"  cy="500" rx="220" ry="200" fill="url(#flare2)"/>
+  <ellipse class="f3" cx="280" cy="780" rx="180" ry="160" fill="url(#flare3)"/>
+
+  <!-- small accent flares -->
+  <ellipse cx="50"  cy="100" rx="60" ry="55" fill="url(#flare2)" opacity="0.6"/>
+  <ellipse cx="370" cy="450" rx="70" ry="65" fill="url(#flare3)" opacity="0.5"/>
+  <ellipse cx="180" cy="320" rx="50" ry="45" fill="url(#flare1)" opacity="0.4"/>
+
+  <!-- tiny scattered dots -->
+  <circle class="d1" cx="42"  cy="68"  r="1.5" fill="url(#dot)"/>
+  <circle class="d2" cx="318" cy="92"  r="1"   fill="url(#dot)"/>
+  <circle class="d3" cx="175" cy="210" r="1.5" fill="url(#dot)"/>
+  <circle class="d4" cx="88"  cy="380" r="1"   fill="url(#dot)"/>
+  <circle class="d5" cx="355" cy="310" r="1.5" fill="url(#dot)"/>
+  <circle class="d1" cx="220" cy="490" r="1"   fill="url(#dot)"/>
+  <circle class="d2" cx="60"  cy="620" r="1.5" fill="url(#dot)"/>
+  <circle class="d3" cx="310" cy="580" r="1"   fill="url(#dot)"/>
+  <circle class="d4" cx="140" cy="700" r="1.5" fill="url(#dot)"/>
+  <circle class="d5" cx="380" cy="750" r="1"   fill="url(#dot)"/>
+  <circle class="d1" cx="25"  cy="820" r="1.5" fill="url(#dot)"/>
+  <circle class="d2" cx="260" cy="860" r="1"   fill="url(#dot)"/>
+</svg>
