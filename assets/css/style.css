@@ -227,7 +227,7 @@ header.primary h2 {
   background-image: url('../img/bg-circuit.svg');
   background-size: cover;
   background-repeat: no-repeat;
-
+  background-position: center;
 }
 
 .content ul li a {
