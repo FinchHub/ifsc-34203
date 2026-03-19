@@ -576,7 +576,8 @@ p#intro {
 @media screen and (min-width: 64rem) {
   /* -------- Index Page -------- */
 
-  #projects ul li:hover {
+  #projects ul li:hover,
+  #gridlab ul li:hover {
     transform: scale(1.02);
     transition: 0.3s ease;
     background-color: rgba(200, 200, 200, 0.1);
