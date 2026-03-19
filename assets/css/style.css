@@ -188,6 +188,18 @@ header.primary h2 {
   font-size: 1rem;
 }
 
+.paragraph-block {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: justify;
+  padding: 5px 15px;
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  margin-top: 30px;
+  width: 100%;
+}
+
 .content {
   border-radius: 5px;
   padding: 5px 0px;
@@ -571,6 +583,12 @@ p#intro {
       text-align: center;
     }
   }
+
+  .paragraph-block {
+    max-width: 65vw;
+    margin: 40px auto 0;
+    font-size: 1.3rem;
+  }
 }
 
 @media screen and (min-width: 64rem) {
@@ -665,6 +683,11 @@ p#intro {
   .certification:hover {
     transform: scale(1.02);
     transition: 0.3s ease;
+  }
+
+  .paragraph-block {
+    margin-top: 50px;
+    font-size: 1.5rem;
   }
 }
 
