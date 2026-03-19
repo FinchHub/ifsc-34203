@@ -26,24 +26,13 @@ html {
   color: var(--text);
 }
 
-/*
-body {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  gap: 20px;  
-  max-width: 80vw;
-  margin: 20px auto;
-}
-*/
-
 body {
   margin: 10px 0 0 0;
   background-color: var(--bg);
   overflow-x: hidden;
   padding-top: 60px;
 
-  background-image: url('../img/bg-atmosphere.svg');
+  background-image: url("../img/bg-atmosphere.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -91,6 +80,11 @@ main {
   max-height: 20px;
 }
 
+.nav-logo img:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease;
+}
+
 .nav-menu {
   display: flex;
   flex-direction: column;
@@ -112,7 +106,9 @@ main {
   visibility: hidden;
 
   opacity: 0;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
   z-index: 98;
 }
 
@@ -143,6 +139,11 @@ main {
   padding: 4px;
 }
 
+.nav-toggle:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease;
+}
+
 .nav-toggle span {
   display: block;
   width: 24px;
@@ -168,11 +169,13 @@ header.primary::after {
   left: 0;
   width: 100%;
   height: 1px;
-  background: linear-gradient(to right,
-      transparent,
-      var(--muted) 20%,
-      var(--muted) 80%,
-      transparent);
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--muted) 20%,
+    var(--muted) 80%,
+    transparent
+  );
 }
 
 header.primary h1 {
@@ -184,8 +187,6 @@ header.primary h1 {
 header.primary h2 {
   font-size: 1rem;
 }
-
-
 
 .content {
   border-radius: 5px;
@@ -205,9 +206,6 @@ header.primary h2 {
   grid-template-rows: auto;
   gap: 2rem;
   margin: 0 4vw;
-
-
-
 }
 
 .content ul li {
@@ -222,7 +220,7 @@ header.primary h2 {
   aspect-ratio: 1;
 
   box-shadow: inset 0 0 25px rgba(167, 139, 250, 0.16);
-  background-image: url('../img/bg-circuit.svg');
+  background-image: url("../img/bg-circuit.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -257,7 +255,8 @@ header.primary h2 {
   font-size: 1.4rem;
 }
 
-#gridlab ul {}
+#gridlab ul {
+}
 
 footer {
   margin: 5vh 0 1vh;
@@ -295,11 +294,13 @@ section#information::after {
   left: 0;
   width: 100%;
   height: 1px;
-  background: linear-gradient(to right,
-      transparent,
-      var(--muted) 20%,
-      var(--muted) 80%,
-      transparent);
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--muted) 20%,
+    var(--muted) 80%,
+    transparent
+  );
 }
 
 section#information {
@@ -324,6 +325,7 @@ p#intro {
   border: 1px solid var(--border);
   border-radius: 5px;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 #skills {
@@ -352,6 +354,7 @@ p#intro {
   background-color: var(--card);
   border: 1px solid var(--border);
   border-radius: 5px;
+  margin: 2vh auto;
 }
 
 .job-company,
@@ -379,7 +382,6 @@ p#intro {
   display: none;
 }
 
-
 .job-description {
   position: relative;
   margin: 0px 2vw 30px;
@@ -402,7 +404,6 @@ p#intro {
 
 /* 768px */
 @media screen and (min-width: 48rem) {
-
   /* -------- Navbar -------- */
 
   /* -------- Index Page -------- */
@@ -456,11 +457,13 @@ p#intro {
     left: 0;
     width: 100%;
     height: 1px;
-    background: linear-gradient(to right,
-        transparent,
-        var(--muted) 20%,
-        var(--muted) 80%,
-        transparent);
+    background: linear-gradient(
+      to right,
+      transparent,
+      var(--muted) 20%,
+      var(--muted) 80%,
+      transparent
+    );
   }
 
   #skills {
@@ -475,10 +478,11 @@ p#intro {
     grid-area: ext-links;
   }
 
-  #external-links a img {}
+  #external-links a img {
+  }
 
   #external-links a img:hover {
-    transform: scale(1.30);
+    transform: scale(1.3);
     transition: ease 0.2s;
   }
 
@@ -572,10 +576,64 @@ p#intro {
 @media screen and (min-width: 64rem) {
   /* -------- Index Page -------- */
 
+  #projects ul li:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease;
+    background-color: rgba(200, 200, 200, 0.1);
+  }
+
   /* ---------- Resume ---------- */
+  h1#resume-name,
+  h2 {
+    font-size: 3rem;
+  }
+
+  h1#resume-name:hover {
+    transform: scale(1.02);
+    color: var(--accent);
+    transition: 0.3s ease;
+  }
+
   .resume-main {
     margin: 3vh auto;
-    max-width: 1000px;
+    max-width: 98vw;
+  }
+
+  .resume-info-top {
+    width: 98vw;
+    position: relative;
+    padding-bottom: 1rem;
+  }
+
+  #information {
+    font-size: 1.3rem;
+  }
+
+  p#intro {
+    margin: 2vh 0 2vh 2vw;
+    font-size: 1.5rem;
+  }
+
+  section#external-links {
+    gap: 65px;
+  }
+
+  #external-links img {
+    transform: scale(1.5);
+  }
+
+  #expanded-info {
+    & dt {
+      font-size: 1.5rem;
+    }
+
+    & dd {
+      font-size: 1.5rem;
+    }
+  }
+
+  .resume-info-top::after {
+    height: 0px;
   }
 
   .job-infoblock {
@@ -587,8 +645,30 @@ p#intro {
     box-shadow: 0;
   }
 
+  .job-company,
+  .job-title,
+  .cert-name {
+    font-size: 2rem;
+  }
+
+  .job-description,
+  .job-location,
+  .job-dates,
+  .issuer,
+  .cert-dates {
+    font-size: 1.5rem;
+  }
+
+  p#intro:hover,
+  .job-description:hover,
+  .certification:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease;
+  }
 }
 
-@media screen and (min-width >=80rem) {}
+@media screen and (min-width >=80rem) {
+}
 
-@media screen and (min-width >=96rem) {}
+@media screen and (min-width >=96rem) {
+}
