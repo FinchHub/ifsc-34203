@@ -362,7 +362,7 @@ p#intro {
 }
 
 .certification {
-  max-width: fit-content;
+  max-width: 80%;
   background-color: var(--card);
   border: 1px solid var(--border);
   border-radius: 5px;
@@ -375,7 +375,7 @@ p#intro {
   padding: 0 3vw;
   font-size: 1.3rem;
   font-variant: small-caps;
-  text-align: left;
+  text-align: center;
 }
 
 .job-title,
@@ -386,7 +386,7 @@ p#intro {
   margin: 0 0 3px;
   padding: 0 3vw;
   font-weight: 300;
-  text-align: left;
+  text-align: center;
 }
 
 .job-location,
@@ -570,8 +570,19 @@ p#intro {
     }
   }
 
+  #certifications {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+
+    & h2 {
+      grid-area: 1 / 1 / 2 / 3;
+    }
+  }
+
   .certification {
-    max-width: fit-content;
+    max-width: 480px;
     margin: 2vh auto;
     padding: 1vh 0;
 
