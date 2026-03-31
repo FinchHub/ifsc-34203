@@ -191,7 +191,7 @@ h3 {
   font-variant: small-caps;
 }
 
-.questionnaire h3 {
+h3.questionnaire {
   font-size: 1rem;
   font-variant: small-caps;
   text-align: center;
@@ -209,6 +209,11 @@ h3 {
   margin-top: 30px;
   width: 100%;
 }
+
+p.questionnaire-block {
+  margin-top: 15px;
+}
+
 
 .content {
   border-radius: 5px;
@@ -435,7 +440,7 @@ p#intro {
   }
 
   header.primary h2,
-  .questionairre h3 {
+  h3.questionnaire {
     font-size: clamp(1rem, 6vw, 1.7rem);
   }
 
