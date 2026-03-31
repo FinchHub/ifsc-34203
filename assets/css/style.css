@@ -229,7 +229,10 @@ p.questionnaire-block {
 
 .content ul {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* I was having issues with the squares growing/shrinking unevenly. minmax allows these squares to
+* be responsive and all grow uniformly. I honestly don't completely understand it just yet, but I think
+* it actually adjusts the size of the grid tracks themselves. */
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   grid-template-rows: auto;
   gap: 2rem;
   margin: 0 4vw;
