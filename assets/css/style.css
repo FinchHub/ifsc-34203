@@ -188,6 +188,18 @@ header.primary h2 {
   font-size: 1rem;
 }
 
+h3 {
+  text-align: center;
+  font-variant: small-caps;
+}
+
+h3.questionnaire {
+  font-size: 1rem;
+  font-variant: small-caps;
+  text-align: center;
+  margin: 35px auto 0px auto;
+}
+
 .paragraph-block {
   font-size: 1.1rem;
   line-height: 1.5;
@@ -198,6 +210,10 @@ header.primary h2 {
   border-radius: 5px;
   margin-top: 30px;
   width: 100%;
+}
+
+p.questionnaire-block {
+  margin-top: 15px;
 }
 
 .content {
@@ -214,7 +230,10 @@ header.primary h2 {
 
 .content ul {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* I was having issues with the squares growing/shrinking unevenly. minmax allows these squares to
+* be responsive and all grow uniformly. I honestly don't completely understand it just yet, but I think
+* it actually adjusts the size of the grid tracks themselves. */
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   grid-template-rows: auto;
   gap: 2rem;
   margin: 0 4vw;
@@ -362,7 +381,7 @@ p#intro {
 }
 
 .certification {
-  max-width: fit-content;
+  max-width: 80%;
   background-color: var(--card);
   border: 1px solid var(--border);
   border-radius: 5px;
@@ -375,7 +394,7 @@ p#intro {
   padding: 0 3vw;
   font-size: 1.3rem;
   font-variant: small-caps;
-  text-align: left;
+  text-align: center;
 }
 
 .job-title,
@@ -386,7 +405,7 @@ p#intro {
   margin: 0 0 3px;
   padding: 0 3vw;
   font-weight: 300;
-  text-align: left;
+  text-align: center;
 }
 
 .job-location,
@@ -412,6 +431,13 @@ p#intro {
   display: none;
 }
 
+iframe {
+  margin-top: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100vh;
+}
+
 /* ---------- Media Queries ---------- */
 
 /* 768px */
@@ -427,8 +453,9 @@ p#intro {
     font-size: clamp(1.4rem, 6vw, 2.5rem);
   }
 
-  header.primary h2 {
-    font-size: clamp(1rem, 6vw, 1.4rem);
+  header.primary h2,
+  h3.questionnaire {
+    font-size: clamp(1rem, 6vw, 1.7rem);
   }
 
   .content ul {
@@ -570,8 +597,19 @@ p#intro {
     }
   }
 
+  #certifications {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+
+    & h2 {
+      grid-area: 1 / 1 / 2 / 3;
+    }
+  }
+
   .certification {
-    max-width: fit-content;
+    max-width: 480px;
     margin: 2vh auto;
     padding: 1vh 0;
 
