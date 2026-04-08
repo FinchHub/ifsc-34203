@@ -1,3 +1,12 @@
+<!-- Since this is a rapid prototype, I've restricted myself from using a completely
+separate CSS stylesheet just to try and get a functional skeleton working. There are
+two inline uses of CSS styling in this rapid prototype, I am aware this is not a BP.
+
+This doesn't look anywhere near as good as it could, but if I tried to polish it 
+any more than this, I'm afraid I'd commit more time to it than my actual project 
+given how much I need to get done with the final version of this site in my limited 
+timeframe. -->
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -42,16 +51,21 @@
           <div class="collapse navbar-collapse text-end" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link active fs-3 text-white"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link fs-3 text-white" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link fs-3 text-white" href="#">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Careers</a>
+                <a class="nav-link fs-3 text-white" href="#">Careers</a>
               </li>
             </ul>
           </div>
@@ -95,35 +109,41 @@
       </div>
     </section>
 
-    <section id="services-section">
+    <section class="mb-4">
       <div class="row">
-        <div class="col-6">
+        <div
+          class="col-md-6 col-sm-12 d-flex flex-column justify-content-center"
+        >
           <h2 class="text-uppercase display-5">What We Build</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item fs-3 text-uppercase">
+              Water Treatment Facilities
+            </li>
+            <li class="list-group-item fs-3 text-uppercase">
+              Wastewater Treatment Facilities
+            </li>
+            <li class="list-group-item fs-3 text-uppercase">Pump Stations</li>
+            <li class="list-group-item fs-3 text-uppercase">Lift Stations</li>
+            <li class="list-group-item fs-3 text-uppercase">
+              Concrete, Mechanical, and Structural
+            </li>
+          </ul>
         </div>
-        <div class="col-6">
+        <div class="col-md-6 col-sm-12">
           <img src="assets/img/heber.jpg" alt="" class="img-fluid" />
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="row">
-        <div class="col-12">Col 1</div>
-        <div class="col-6">
-          <img class="placeholder" src="..." />
-        </div>
-      </div>
-    </section>
-
-    <section>
+    <section class="mb-4">
       <div class="row">
         <div class="col-6">
-          <h2>Committed to Excellence</h2>
+          <h2 class="text-uppercase display-5">Committed to Excellence</h2>
         </div>
       </div>
       <div class="row">
         <div class="col-12">
-          <p>
+          <p class="fs-2">
             Local to central Arkansas and serving the community for over ten
             years, we specialize in the development of water and wastewater
             infrastructure, leveraging decades of collected expertise to
@@ -134,8 +154,76 @@
     </section>
 
     <section>
-      <img src="..." class="placeholder" />
+      <div class="row justify-content-center mb-4">
+        <div class="col-10 position-relative">
+          <img src="assets/img/safety-uncompressed.jpg" class="img-fluid" />
+          <div
+            class="position-absolute bottom-0 start-25 p-4 col-8"
+            style="background-color: #515151"
+          >
+            <h2 class="text-uppercase display-5 text-white">
+              Safety Minded Experts
+            </h2>
+            <p class="fs-2 text-white">
+              Safety is built into every phase of our projects, from
+              pre-construction planning to final walkthroughs. Whatever the job,
+              Doxa maintains a strong safety culture across every jobsite.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <section class="mb-4">
+      <div class="row">
+        <div
+          class="col-md-6 col-sm-12 d-flex flex-column justify-content-center"
+        >
+          <h2 class="text-uppercase display-5">Join the Team</h2>
+          <p class="fs-2">
+            We’re always looking for skilled, safety-minded professionals to
+            join the team. If you take pride in your work and want to build
+            lasting experience while constructing some of Arkansas’s most
+            resilient infrastructure, we want to hear from you.
+          </p>
+          <button
+            class="mt-2 mb-3 px-4 py-2 b-0 text-uppercase fw-semibold align-self-start"
+          >
+            Careers
+          </button>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <img src="assets/img/pic1.png" alt="" class="img-fluid" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ul won't center completely in relation to the image below it and can't figure out
+    how to fix it. I know inline styling isn't the move here but I didn't want to create a
+    sheet for two styles.-->
+    <footer class="bg-secondary pt-5 pb-2 text-center">
+      <ul class="ps-0 list-inline" style="padding-right: 40px">
+        <li class="list-inline-item text-uppercase mx-3">
+          <a href="." class="fs-3 text-decoration-none text-black">Contact</a>
+        </li>
+        <li class="list-inline-item fs-3 text-uppercase text-black mx-3">
+          <a href="." class="fs-3 text-decoration-none text-black">Projects</a>
+        </li>
+        <li class="list-inline-item fs-3 text-uppercase text-black mx-3">
+          <a href="." class="fs-3 text-decoration-none text-black">Legal</a>
+        </li>
+      </ul>
+      <img class="img-fluid" src="assets/img/doxa-logo.png" width="220" />
+      <p class="fs-4 text-disabled text-uppercase pt-2 pb-0 mb-0">
+        &#169;2026 Doxa Construction
+      </p>
+      <p class="fs-5 text-disabled text-uppercase pt-0 pb-0">
+        Website by
+        <a href="." class="text-uppercase text-decoration-none text-black"
+          >Chance Crosson</a
+        >
+      </p>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
