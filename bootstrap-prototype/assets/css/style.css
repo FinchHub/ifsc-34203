@@ -6,6 +6,20 @@ nav {
   background: linear-gradient(to bottom, #343434f2, #34343400);
 }
 
+.bg-main {
+  background-image: url("../img/plans_bg_low_opacity 1.png");
+}
+
+button {
+  background-color: #fff;
+  border: 0;
+}
+
+.careers-btn {
+  background-color: #a0522d;
+  color: #fff;
+}
+
 .hero-img {
   background: linear-gradient(to top, #161616ff, #51515100);
 }
@@ -20,6 +34,10 @@ nav {
 
 .accent-top {
   border-top: 1px solid #a0522d !important;
+}
+
+.accent-height {
+  height: 50%;
 }
 
 footer ul {
