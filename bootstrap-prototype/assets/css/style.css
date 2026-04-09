@@ -14,6 +14,14 @@ nav {
   background-color: #515150;
 }
 
+.build-list {
+  background-color: #f5f5f5;
+}
+
+.accent-top {
+  border-top: 1px solid #a0522d !important;
+}
+
 footer ul {
   padding-right: 40px;
 }
