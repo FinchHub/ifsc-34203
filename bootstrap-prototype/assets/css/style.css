@@ -1,0 +1,19 @@
+body {
+  font-family: "barlow";
+}
+
+nav {
+  background: linear-gradient(to bottom, #343434f2, #34343400);
+}
+
+.hero-img {
+  background: linear-gradient(to top, #161616ff, #51515100);
+}
+
+.safety-box {
+  background-color: #515150;
+}
+
+footer ul {
+  padding-right: 40px;
+}

@@ -1,12 +1,3 @@
-<!-- Since this is a rapid prototype, I've restricted myself from using a completely
-separate CSS stylesheet just to try and get a functional skeleton working. There are
-two inline uses of CSS styling in this rapid prototype, I am aware this is not a BP.
-
-This doesn't look anywhere near as good as it could, but if I tried to polish it 
-any more than this, I'm afraid I'd commit more time to it than my actual project 
-given how much I need to get done with the final version of this site in my limited 
-timeframe. -->
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -19,6 +10,7 @@ timeframe. -->
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link href="assets/css/style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,7 +20,7 @@ timeframe. -->
   </head>
   <body class="overflow-x-hidden">
     <!-- Hero Section w/overlay -->
-    <section class="position-relative">
+    <section class="position-relative hero-img">
       <img src="assets/img/jud-2.png" class="object-fit-cover vh-100 vw-100" />
       <nav
         class="position-absolute top-0 start-0 end-0 navbar navbar-expand-lg"
@@ -157,10 +149,7 @@ timeframe. -->
       <div class="row justify-content-center mb-4">
         <div class="col-10 position-relative">
           <img src="assets/img/safety-uncompressed.jpg" class="img-fluid" />
-          <div
-            class="position-absolute bottom-0 start-25 p-4 col-8"
-            style="background-color: #515151"
-          >
+          <div class="position-absolute bottom-0 start-25 p-4 col-8 safety-box">
             <h2 class="text-uppercase display-5 text-white">
               Safety Minded Experts
             </h2>
@@ -198,11 +187,8 @@ timeframe. -->
       </div>
     </section>
 
-    <!-- ul won't center completely in relation to the image below it and can't figure out
-    how to fix it. I know inline styling isn't the move here but I didn't want to create a
-    sheet for two styles.-->
     <footer class="bg-secondary pt-5 pb-2 text-center">
-      <ul class="ps-0 list-inline" style="padding-right: 40px">
+      <ul class="ps-0 list-inline">
         <li class="list-inline-item text-uppercase mx-3">
           <a href="." class="fs-3 text-decoration-none text-black">Contact</a>
         </li>
