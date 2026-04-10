@@ -8,6 +8,7 @@ body {
 }
 
 .hero img {
+  position: relative;
   width: 100vw;
   height: 100vh;
   object-fit: cover;
@@ -15,4 +16,13 @@ body {
 }
 
 .navbar {
+  position: absolute;
+  top: 0;
+}
+
+.navbar img {
+  width: 35vw;
+  max-width: 180px;
+  height: auto;
+  margin: 1vh auto 0 1vw;
 }
