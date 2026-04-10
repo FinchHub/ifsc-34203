@@ -42,3 +42,8 @@ body {
 .nav-links {
   display: none;
 }
+
+.hero-text {
+  position: absolute;
+  bottom: 0;
+}
