@@ -1,3 +1,7 @@
+:root {
+  --accent: #A0522D;
+}
+
 html {
   margin: 0;
 }
@@ -5,14 +9,24 @@ html {
 body {
   margin: 0;
   overflow-x: hidden;
+  font-family: "barlow";
+}
+
+.hero {
+  position: relative;
 }
 
 .hero img {
-  position: relative;
   width: 100vw;
   height: 100vh;
   object-fit: cover;
   object-position: 45% 50%;
+}
+
+.hero-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, #161616FF 0%, #51515100 50%);
 }
 
 .navbar {
@@ -45,5 +59,35 @@ body {
 
 .hero-text {
   position: absolute;
-  bottom: 0;
+  width: 100%;
+  bottom: 5%;
+
+  & p,
+  & h1 {
+    margin: 0 0 0 5px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  & p {
+    font-size: 1.3rem;
+  }
+
+  & h1 {
+    font-size: 2.3rem;
+  }
+}
+
+.hero-btn {
+  display: block;
+  color: #FFF;
+  background-color: var(--accent);
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  text-align: center;
+  width: fit-content;
+  margin: 80px auto 0;
 }
