@@ -1,5 +1,5 @@
 :root {
-  --accent: #A0522D;
+  --accent: #a0522d;
 }
 
 html {
@@ -26,7 +26,7 @@ body {
 .hero-img-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, #161616FF 0%, #51515100 50%);
+  background: linear-gradient(to top, #161616ff 0%, #51515100 50%);
 }
 
 .navbar {
@@ -65,7 +65,7 @@ body {
   & p,
   & h1 {
     margin: 0 0 0 5px;
-    color: #FFF;
+    color: #fff;
     text-transform: uppercase;
     font-weight: 700;
   }
@@ -81,7 +81,7 @@ body {
 
 .hero-btn {
   display: block;
-  color: #FFF;
+  color: #fff;
   background-color: var(--accent);
   text-decoration: none;
   font-size: 1.3rem;
@@ -90,4 +90,10 @@ body {
   text-align: center;
   width: fit-content;
   margin: 80px auto 0;
+}
+
+.page-bg {
+  background: url("../img/plans_bg_low_opacity.webp");
+  background-size: 220vh auto;
+  background-position: -390px 0px;
 }
