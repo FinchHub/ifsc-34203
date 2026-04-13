@@ -32,6 +32,7 @@ h2 {
 .hero img {
   width: 100vw;
   height: 100vh;
+  height: 100dvh;
   object-fit: cover;
   object-position: 45% 50%;
 }
