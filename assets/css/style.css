@@ -295,6 +295,15 @@ footer {
   font-variant: small-caps;
 }
 
+.srcset-body {
+  margin-top: 30px;
+}
+
+.srcset-body img {
+  width: 100%;
+  height: auto;
+}
+
 /* ------------ Resume Page ------------ */
 
 h1#resume-name,
