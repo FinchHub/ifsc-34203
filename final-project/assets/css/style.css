@@ -153,11 +153,13 @@ h2 {
   }
 }
 
-.decor-img {
+.decor-img,
+.career-img {
   display: none;
 }
 
 .commitment-block,
+.careers,
 .career-block {
   margin-top: 30px;
 
@@ -207,10 +209,6 @@ h2 {
 .career-block {
   & .page-btn {
     margin: 20px auto;
-  }
-
-  & img {
-    display: none;
   }
 }
 
@@ -333,6 +331,42 @@ footer {
     grid-area: decor-img;
     width: 100%;
     margin-left: 5px;
+    align-self: center;
+  }
+
+  .safety-block {
+    & img {
+      display: block;
+      width: 95%;
+      margin: auto;
+    }
+  }
+
+  .safety-note {
+    & h2 {
+      font-size: clamp(1.5rem, 3.18vw, 2rem);
+    }
+  }
+
+  .careers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "career-blk career-img";
+  }
+
+  .career-block {
+    grid-area: career-blk;
+
+    & .page-btn {
+      margin: 10px auto 0 10px;
+      padding-bottom: 7px;
+    }
+  }
+
+  .career-img {
+    grid-area: career-img;
+    display: block;
+    width: 100%;
     align-self: center;
   }
 }
