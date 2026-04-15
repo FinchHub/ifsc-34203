@@ -1,0 +1,80 @@
+[
+  {
+    "id": "judsonia-wwtp-improvements",
+    "title": "Judsonia WWTP Improvements",
+    "status": "current",
+    "location": "Judsonia, AR",
+    "engineer": "Salt Engineers",
+    "client": "Judsonia Water Department",
+    "description": "Conducted for the Judsonia Water Department, this project involved the construction of new earthen levee embankments and improvements to lagoon containment. Work included the installation of new rip-rap erosion protection and the rehabilitation of existing rock media. Floating lagoon baffles were added to improve treatment flow, along with new floating surface aerators and control panels. An ultrasonic algae control unit was integrated, and a precast concrete chlorine contact chamber was installed for final disinfection.",
+    "thumbnail": "assets/img/projects/006-judsonia.webp",
+    "gallery": [
+      "assets/img/projects/006-judsonia.webp"
+    ]
+  },
+  {
+    "id": "heber-springs-wtp-improvements",
+    "title": "Heber Springs WTP Improvements",
+    "status": "past",
+    "location": "Heber Springs, AR",
+    "engineer": "Salt Engineers",
+    "client": "Heber Springs Water & Sewer",
+    "description": "The Heber Springs WTP Improvements project involved the installation of two new Aria-Filtra microfiltration membrane skids, along with all required tanks, piping, valves, control panels, and related ancillary equipment. New process piping and valves provided by the membrane supplier were installed, supplemented by the furnishing and installation of drain and process piping. Additional modules were also installed on the existing membrane skids.",
+    "thumbnail": "assets/img/projects/001-hebersprings.webp",
+    "gallery": [
+      "assets/img/projects/001-hebersprings.webp"
+    ]
+  },
+  {
+    "id": "fourche-creek-wrf-remediation",
+    "title": "Fourche Creek WRF Remediation",
+    "status": "past",
+    "location": "Little Rock, AR",
+    "engineer": "PMI Civil Engineering",
+    "client": "Little Rock Water Reclamation Authority",
+    "description": "The Fourche Creek WRF Remediation project included all work necessary to stabilize and repair the embankment along the west bank of the Arkansas River. Clearing and grubbing was required prior to construction, and work occurred within the river's typical pool waterline. The scope of work included earthwork, riprap, grading, backfill, geotextile fabric, and acceptance testing, together with any incidental and ancillary work needed for a complete and functional remediation.",
+    "thumbnail": "assets/img/projects/002-fourchecreek.webp",
+    "gallery": [
+      "assets/img/projects/002-fourchecreek.webp"
+    ]
+  },
+  {
+    "id": "pocahontas-water-sewer-transmission-main",
+    "title": "Pocahontas Water & Sewer Transmission Main",
+    "status": "past",
+    "location": "Pocahontas, AR",
+    "engineer": "DeClerk-Throesch Engineering",
+    "client": "Pocahontas Water & Sewer Systems",
+    "description": "This project, completed for the City of Pocahontas, involved the excavation for new water and sewer mains, which included handling, laying, testing, and disinfection of PVC and ductile iron water pipes and fittings, as well as backfilling for water lines, sewer lines, and related structures. Additional scope items included gate valves and valve boxes, fire hydrant assemblies, tapping sleeves with valves and boxes, and the installation of a chlorine analyzer system. Sewer work encompassed the handling, laying, and testing of PVC gravity pipes and fittings, manhole installation, and encasement piping for water and sewer lines.",
+    "thumbnail": "assets/img/projects/003-pocahontas.webp",
+    "gallery": [
+      "assets/img/projects/003-pocahontas.webp"
+    ]
+  },
+  {
+    "id": "little-maumelle-wrf-2025-asset-renewal",
+    "title": "Little Maumelle WRF 2025 Asset Renewal",
+    "status": "past",
+    "location": "Little Rock, AR",
+    "engineer": "N/A",
+    "client": "Little Rock Water Reclamation Authority",
+    "description": "This project entailed a comprehensive rebuild of the chain and flight systems for Final Clarifiers #2, #3, and #4 at the Little Maumelle Water Reclamation Facility. In addition, four influent final clarifier gates, two influent bio selector gates, and thirteen actuators were replaced, along with the Odor Control Y-Gate actuator and a 12-inch RAS Meter Pit valve.",
+    "thumbnail": "assets/img/projects/004-maumelleassetrenewal.webp",
+    "gallery": [
+      "assets/img/projects/004-maumelleassetrenewal.webp"
+    ]
+  },
+  {
+    "id": "little-rock-zoo-stormwater-upgrades",
+    "title": "Little Rock Zoo Stormwater Upgrades",
+    "status": "past",
+    "location": "Little Rock, AR",
+    "engineer": "Pollution Management, Inc.",
+    "client": "City of Little Rock",
+    "description": "Project work included the installation of inlet filters at both existing and proposed stormwater inlets, along with two new hydrodynamic separators. An existing wash-down pipe was rerouted to the sanitary sewer system, and approximately 200 linear feet of existing stormwater system were replaced with new piping, grate inlets, and junction structures to ensure improved drainage and water quality management.",
+    "thumbnail": "assets/img/projects/005-littlerockzoo.webp",
+    "gallery": [
+      "assets/img/projects/005-littlerockzoo.webp"
+    ]
+  }
+]
