@@ -1,3 +1,6 @@
+/* 98% of this was written by myself without any suggestions or contributions
+* from AI. Where AI is used, I have explicitly mentioned it in comments. */
+
 /* Remember to do alt text on images. */
 
 :root {
@@ -49,7 +52,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(to bottom, #343434f2, #34343400);
+  background: linear-gradient(to bottom, #262626f2 4%, #26262680, #26262600);
 }
 
 .navbar img {
@@ -373,4 +376,101 @@ footer {
 
 /* 1024px */
 @media screen and (min-width: 64rem) {
+  .nav-links {
+    display: flex;
+    gap: 50px;
+    margin-right: 15px;
+
+    & li {
+      list-style-type: none;
+    }
+
+    & li a {
+      font-size: 2rem;
+      text-decoration: none;
+      color: #fff;
+      font-variant: small-caps;
+    }
+  }
+
+  /* Almost wrote out this underline effect by myself, but had to go back and
+* reference from when I did it in the WebTech Final last semester. */
+  .nav-links li a {
+    display: inline-block;
+    position: relative;
+    transition: transform 0.2s ease;
+  }
+
+  .nav-links li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+  }
+
+  .nav-links li a:hover {
+    transform: scale(1.1);
+  }
+
+  .nav-links li a:hover::after {
+    width: 100%;
+  }
+
+  .nav-mobile-btn {
+    display: none;
+  }
+
+  .hero-text {
+    & p {
+      font-size: 3rem;
+    }
+
+    & h1 {
+      font-size: 4rem;
+    }
+  }
+
+  /* Used AI to help on the slide-in effect. I've done this before
+* and know I need to set up pseudos on the button and hover, but once
+* again, I can't ever remember exactly what I need on them. */
+  .hero-btn {
+    font-size: 2.5rem;
+    margin: 15px auto auto 5px;
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease;
+  }
+
+  .hero-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #fff;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: -1;
+  }
+
+  .hero-btn:hover {
+    color: #000;
+  }
+
+  .hero-btn:hover::before {
+    transform: translateX(0);
+  }
+
+  .block-p {
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 3.18vw, 2rem);
+  }
 }
+
+/* 1280px next, then 1536px */
