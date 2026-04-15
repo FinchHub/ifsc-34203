@@ -484,4 +484,9 @@ footer {
       font-size: clamp(5rem, 5vw, 15rem);
     }
   }
+
+  .hero-btn {
+    font-size: clamp(1rem, 2vw, 6rem);
+    margin-left: 15px;
+  }
 }
