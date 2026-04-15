@@ -18,11 +18,16 @@ body {
   font-family: "barlow";
 }
 
+/* preserves line break on the hero header without having to use <br> */
+h1 {
+  white-space: pre-line;
+}
+
 h1,
 h2 {
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .hero {
@@ -266,3 +271,9 @@ footer {
     color: var(--accent);
   }
 */
+
+/* 768px */
+@media screen and (min-width: 48rem) {}
+
+/* 1024px */
+@media screen and (min-width: 64rem) {}
