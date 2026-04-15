@@ -426,7 +426,7 @@ footer {
 
   .hero-text {
     & p {
-      font-size: 3rem;
+      font-size: 2rem;
     }
 
     & h1 {
@@ -477,11 +477,11 @@ footer {
 @media screen and (min-width: 96rem) {
   .hero-text {
     & p {
-      font-size: 4rem;
+      font-size: clamp(3rem, 3.4vw, 10rem);
     }
 
     & h1 {
-      font-size: 8rem;
+      font-size: clamp(5rem, 5vw, 15rem);
     }
   }
 }
