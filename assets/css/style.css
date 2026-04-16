@@ -295,13 +295,27 @@ footer {
   font-variant: small-caps;
 }
 
-.srcset-body {
+.srcset-body,
+.audio {
   margin-top: 30px;
 }
 
 .srcset-body img {
   width: 100%;
   height: auto;
+}
+
+.audio {
+  text-align: center;
+}
+
+.video {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.video video {
+  width: 90vw;
 }
 
 /* ------------ Resume Page ------------ */
