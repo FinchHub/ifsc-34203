@@ -489,4 +489,8 @@ footer {
     font-size: clamp(1rem, 2vw, 6rem);
     margin-left: 15px;
   }
+
+  h2 {
+    font-size: clamp(3rem, 3.18vw, 7.2rem);
+  }
 }
