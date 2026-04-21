@@ -493,4 +493,16 @@ footer {
   h2 {
     font-size: clamp(3rem, 3.18vw, 7.2rem);
   }
+
+  p.block-p {
+    font-size: clamp(2rem, 2.5vw, 6rem);
+  }
+
+  /* FIX */
+  .services-block {
+  }
+
+  .services-block ul li {
+    font-size: clamp(2rem, 2.5vw, 6rem);
+  }
 }
