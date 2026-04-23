@@ -323,10 +323,16 @@ footer {
     & ul li {
       font-size: 1.5rem;
     }
+
+    margin-bottom: 5vh;
   }
 
   .services-block {
     grid-area: service-blk;
+  }
+
+  .commitment-block {
+    margin: 0 2vw 2vh;
   }
 
   .decor-img {
@@ -361,7 +367,7 @@ footer {
     grid-area: career-blk;
 
     & .page-btn {
-      margin: 10px auto 0 10px;
+      margin: 2vh auto 0 10px;
       padding-bottom: 7px;
     }
   }
@@ -471,6 +477,24 @@ footer {
   h2 {
     font-size: clamp(1.5rem, 3.18vw, 2rem);
   }
+
+  .services-block {
+    max-width: 40vw;
+    margin: auto 0 auto 0;
+    padding: 10px;
+  }
+
+  .commitment-block {
+    margin-top: 70px;
+  }
+
+  .career-block {
+    margin: 0vh 1vw;
+  }
+
+  .page-btn {
+    margin-top: 2vh;
+  }
 }
 
 /* 1536px */
@@ -504,7 +528,7 @@ footer {
 
   .services-block {
     max-width: 40vw;
-    max-height: 80%;
+    max-height: 90%;
     margin: auto auto auto 0;
     padding: 10px;
 
@@ -528,6 +552,10 @@ footer {
     }
   }
 
+  .page-btn {
+    font-size: clamp(1rem, 2vw, 6rem);
+  }
+
   footer {
     & ul {
       gap: clamp(30px, 2.35vw, 100px);
@@ -537,9 +565,5 @@ footer {
     & p {
       font-size: clamp(1.3rem, 1.3vw, 3rem);
     }
-  }
-
-  .page-btn {
-    font-size: clamp(1rem, 2vw, 6rem);
   }
 }
