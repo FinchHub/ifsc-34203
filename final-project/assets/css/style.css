@@ -491,18 +491,55 @@ footer {
   }
 
   h2 {
-    font-size: clamp(3rem, 3.18vw, 7.2rem);
+    font-size: clamp(2rem, 3.18vw, 7.2rem);
   }
 
   p.block-p {
-    font-size: clamp(2rem, 2.5vw, 6rem);
+    font-size: clamp(1.5rem, 1.5vw, 5rem);
   }
 
-  /* FIX */
+  .services {
+    grid-template-columns: 2.5fr 4.5fr;
+  }
+
   .services-block {
+    max-width: 40vw;
+    max-height: 80%;
+    margin: auto auto auto 0;
+    padding: 10px;
+
+    & ul li {
+      font-size: clamp(2rem, 2vw, 6.2rem);
+      line-height: 1.8;
+    }
   }
 
-  .services-block ul li {
-    font-size: clamp(2rem, 2.5vw, 6rem);
+  .decor-img {
+    max-width: 60vw;
+    margin-left: auto;
+  }
+
+  .safety-note {
+    margin-top: -60px;
+    padding: clamp(10px, 1.2vw, 50px);
+
+    & h2 {
+      font-size: clamp(3rem, 3.18vw, 7.2rem);
+    }
+  }
+
+  footer {
+    & ul {
+      gap: clamp(30px, 2.35vw, 100px);
+    }
+
+    & ul li a,
+    & p {
+      font-size: clamp(1.3rem, 1.3vw, 3rem);
+    }
+  }
+
+  .page-btn {
+    font-size: clamp(1rem, 2vw, 6rem);
   }
 }
