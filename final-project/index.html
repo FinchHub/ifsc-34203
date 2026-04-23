@@ -1,3 +1,5 @@
+<!-- Remember to add JSON-LD and do img sets for index -->
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -15,7 +17,15 @@
 
   <body>
     <section class="hero">
-      <img src="assets/img/jud-2.png" alt="Bulldozer on a constructed levee" />
+      <img
+        src="assets/img/hero.webp"
+        srcset="
+          assets/img/hero-80.webp 2268w,
+          assets/img/hero-50.webp 1134w,
+          assets/img/hero-40.webp  567w
+        "
+        alt="Bulldozer on a constructed levee"
+      />
       <div class="hero-img-overlay"></div>
       <nav class="navbar">
         <a href="#"><img src="assets/img/doxa-logo.png" /></a>
