@@ -257,15 +257,6 @@ footer {
   }
 }
 
-/* Will drop this in a media query for desktop
-*
-  & #author a:hover {
-    transition: ease 0.5s;
-    font-size: 1rem;
-    color: var(--accent);
-  }
-*/
-
 /* 768px */
 @media screen and (min-width: 48rem) {
   .hero-text {
