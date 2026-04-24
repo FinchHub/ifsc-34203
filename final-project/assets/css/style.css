@@ -45,7 +45,7 @@ h2 {
   background: linear-gradient(to top, #161616ff 0%, #51515100 50%);
 }
 
-.navbar {
+.navbar-top {
   position: absolute;
   top: 0;
   width: 100%;
@@ -53,6 +53,7 @@ h2 {
   align-items: center;
   justify-content: space-between;
   background: linear-gradient(to bottom, #262626f2 4%, #26262680, #26262600);
+  z-index: 100;
 }
 
 .navbar img {
@@ -71,6 +72,15 @@ h2 {
 
 .nav-links {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  background-color: #fff;
+  flex-direction: column;
+  margin: 0;
+  z-index: 99;
 }
 
 .hero-text {
