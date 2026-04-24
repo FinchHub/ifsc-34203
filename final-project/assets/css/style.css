@@ -257,6 +257,27 @@ footer {
   }
 }
 
+/* Projects Page - Mobile */
+
+.project-list {
+  margin-top: 100px;
+
+  & h2 {
+    text-align: center;
+  }
+}
+
+.project-card {
+  text-align: center;
+}
+
+.projects-grid {
+  & img {
+    display: block;
+    margin: auto;
+  }
+}
+
 /* 768px */
 @media screen and (min-width: 48rem) {
   .hero-text {
