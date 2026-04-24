@@ -70,21 +70,54 @@ h2 {
   margin: 0 1vw 0 auto;
 }
 
+/* AGHGHHGHGHG OH MY GOD */
 .nav-links {
-  display: none;
   position: fixed;
+  display: flex;
   top: 0;
   left: 0;
   width: 100%;
-  height: 50vh;
-  background-color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #FFFFFFE0 99%, #26262690, #94949400);
   flex-direction: column;
   margin: 0;
   z-index: 99;
+  transition: max-height 0.5s ease;
+  padding-left: 0;
+
+  & li {
+    margin: 10px 30px 10px 10px;
+    text-align: left;
+    list-style-type: none;
+    border-left: 2px solid var(--accent);
+    padding-left: 5px;
+  }
+
+  & li:last-child {
+    margin-bottom: 20px;
+  }
+
+  & li a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-variant: small-caps;
+  }
+}
+
+/* Used AI for this ::before. padding on the .open made the entire thing jerk around
+* on the animated closing when I had padding-top set on it. */
+.nav-links::before {
+  content: '';
+  display: block;
+  min-height: 60px;
+  flex-shrink: 0;
 }
 
 .nav-links.open {
-  display: flex;
+  max-height: 50vh;
 }
 
 .navbar-top.open {
@@ -435,10 +468,23 @@ footer {
 
 /* 1024px */
 @media screen and (min-width: 64rem) {
+
+  /* This sucked so bad to get working. Absolutely positioning it was the last resort
+* and even then, I spent half an hour trying to get the nav to right-align. */
   .nav-links {
+    position: absolute;
+    top: 1%;
+    left: unset;
+    right: 10px;
+    overflow: visible;
     display: flex;
+    flex-direction: row;
     gap: 50px;
     margin-right: 15px;
+    padding-top: 0;
+    width: max-content;
+    height: auto;
+    z-index: 101;
 
     & li {
       list-style-type: none;
