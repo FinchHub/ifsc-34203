@@ -4,15 +4,18 @@
 // DOM.
 
 const toggle = document.getElementById('nav-btn');
-const menu = document.getElementById('nav-link-items');
+const navMenu = document.getElementById('nav-link-items');
+const navbar = document.getElementById('navbar-top');
 
 toggle.addEventListener('click', (e) => {
     e.stopPropagation();
-    menu.classList.toggle('open');
+    navMenu.classList.toggle('open');
+    navbar.classList.toggle('open');
 });
 
 document.addEventListener('click', (e) => {
-    if (!menu.contains(e.target)) {
-        menu.classList.remove('open');
+    if (!navMenu.contains(e.target)) {
+        navMenu.classList.remove('open');
+        navbar.classList.remove('open');
     }
 });

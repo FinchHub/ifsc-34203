@@ -83,6 +83,14 @@ h2 {
   z-index: 99;
 }
 
+.nav-links.open {
+  display: flex;
+}
+
+.navbar-top.open {
+  position: fixed;
+}
+
 .hero-text {
   position: absolute;
   width: 100%;
