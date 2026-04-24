@@ -473,13 +473,13 @@ footer {
 * and even then, I spent half an hour trying to get the nav to right-align. */
   .nav-links {
     position: absolute;
-    top: 1%;
+    top: 0px;
     left: unset;
     right: 10px;
     overflow: visible;
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 30px;
     margin-right: 15px;
     padding-top: 0;
     width: max-content;
