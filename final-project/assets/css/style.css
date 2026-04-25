@@ -26,6 +26,10 @@ h2 {
   font-size: 1.4rem;
 }
 
+p {
+  font-weight: 300;
+}
+
 .hero {
   position: relative;
 }
