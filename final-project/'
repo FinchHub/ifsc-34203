@@ -343,6 +343,7 @@ footer {
   border-radius: 0.1rem;
   text-decoration: none;
   padding-top: 1rem;
+  max-width: 350px;
 
   & p {
     font-weight: 300;
@@ -704,8 +705,8 @@ footer {
 
   .projects-grid {
     grid-template-columns: repeat(auto-fit, minmax(400px, 480px));
-    max-width: 2000px;
-    gap: 5rem;
+    max-width: 2200px;
+    gap: 9rem 1rem;
   }
 
   .services {

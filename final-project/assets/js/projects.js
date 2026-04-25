@@ -5,28 +5,30 @@
 const projectList = document.querySelector(".project-list");
 
 fetch("assets/data/projects.json")
-  .then((res) => res.json())
-  .then((projects) => {
-    const current = projects.filter((p) => p.status === "current");
-    const past = projects.filter((p) => p.status === "past");
+    .then((res) => res.json())
+    .then((projects) => {
+        const current = projects.filter((p) => p.status === "current");
+        const past = projects.filter((p) => p.status === "past");
 
-    if (current.length) {
-      projectList.innerHTML += `<h2 class="projects-heading">Current Projects</h2>`;
-      projectList.innerHTML += `<div class="projects-grid">${current.map(renderCard).join("")}</div>`;
-    }
+        if (current.length) {
+            projectList.innerHTML += `<h2 class="projects-heading">Current Projects</h2>`;
+            projectList.innerHTML += `<div class="projects-grid">${current.map(renderCard).join("")}</div>`;
+        }
 
-    if (past.length) {
-      projectList.innerHTML += `<h2 class="projects-heading">Past Projects</h2>`;
-      projectList.innerHTML += `<div class="projects-grid">${past.map(renderCard).join("")}</div>`;
-    }
-  })
-  .catch((err) => console.error("Failed to load projects:", err));
+        if (past.length) {
+            projectList.innerHTML += `<h2 class="projects-heading">Past Projects</h2>`;
+            projectList.innerHTML += `<div class="projects-grid">${past.map(renderCard).join("")}</div>`;
+        }
+    })
+    .catch((err) => console.error("Failed to load projects:", err));
 
 function renderCard(project) {
-  return `
+    return `
     <a href="project.html?id=${project.id}" class="project-card">
       <img src="${project.thumbnail}" alt="${project.title}" />
-      <p>${project.title}</p>
+      <p class="type">${project.type}</p>
+      <p class="title">${project.title}</p>
+      <p class="location">${project.location}</p>
     </a>
   `;
 }
