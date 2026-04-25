@@ -43,7 +43,8 @@ p {
   object-position: 45% 50%;
 }
 
-.hero-img-overlay {
+.hero-img-overlay,
+.projects-img-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(to top, #161616ff 0%, #51515100 50%);
@@ -182,7 +183,8 @@ p {
   }
 }
 
-.block-p {
+.block-p,
+.project-card p {
   font-size: 1.2rem;
   line-height: 1.4;
 }
@@ -315,8 +317,19 @@ footer {
 
 /* Projects Page - Mobile */
 
+/* Without the >, this messes up the nav icons. With it, it only targets
+* the background. But it doesn't have that issue on the home page hero.
+* Not sure why. */
+.projects-hero>img {
+  height: 50vh;
+  height: 50dvh;
+
+}
+
+.projects-img-overlay {}
+
+
 .project-list {
-  margin-top: 100px;
 
   & h2 {
     text-align: center;
@@ -324,14 +337,38 @@ footer {
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-}
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  padding-top: 1rem;
+  max-width: 350px;
 
-.projects-grid {
+  & p {
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #000;
+  }
+
   & img {
     display: block;
     margin: auto;
+    height: auto;
+    border-radius: 0.25rem;
   }
+
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+
+  & img {}
 }
 
 /* Individual Project Page - Mobile */
@@ -374,7 +411,8 @@ footer {
     margin: 15px auto auto 5px;
   }
 
-  .block-p {
+  .block-p,
+  .project-card p {
     font-size: 1.4rem;
   }
 
@@ -468,6 +506,10 @@ footer {
     display: block;
     width: 100%;
     align-self: center;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -575,7 +617,8 @@ footer {
   }
 
 
-  .block-p {
+  .block-p,
+  .project-card p {
     font-size: 1.4rem;
   }
 
@@ -600,6 +643,10 @@ footer {
   .page-btn {
     margin-top: 2vh;
   }
+
+  .projects-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 /* 1536px */
@@ -623,7 +670,8 @@ footer {
     font-size: clamp(2rem, 3.18vw, 7.2rem);
   }
 
-  p.block-p {
+  p.block-p,
+  .project-card p {
     font-size: clamp(1.5rem, 1.5vw, 5rem);
   }
 
@@ -670,5 +718,9 @@ footer {
     & p {
       font-size: clamp(1.3rem, 1.3vw, 3rem);
     }
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
