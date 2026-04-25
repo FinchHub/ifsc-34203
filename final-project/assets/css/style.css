@@ -22,7 +22,7 @@ body {
 h1,
 h2 {
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.4rem;
 }
 
@@ -161,7 +161,8 @@ h2 {
 }
 
 .page-bg {
-  background-image: url("../img/plans-50.webp");
+  background-image: url("../img/plans-bg-1920.webp");
+  background-repeat: no-repeat;
   background-size: 200vh auto;
   background-position: -390px -150px;
   padding-bottom: 10px;
@@ -282,7 +283,7 @@ footer {
   & ul li a {
     text-decoration: none;
     color: #000;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
   }
 
@@ -568,6 +569,7 @@ footer {
   .hero-btn:hover::before {
     transform: translateX(0);
   }
+
 
   .block-p {
     font-size: 1.4rem;
