@@ -364,11 +364,13 @@ footer {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
+  max-width: 1400px;
   gap: 1rem;
   padding: 1rem;
+  justify-content: center;
+  margin: 0 auto;
 
-  & img {}
 }
 
 /* Individual Project Page - Mobile */
@@ -424,8 +426,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    grid-template-areas:
-      "intro intro-line"
+    grid-template-areas: "intro intro-line"
       "para para";
   }
 
@@ -508,9 +509,6 @@ footer {
     align-self: center;
   }
 
-  .projects-grid {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 /* 1024px */
@@ -644,9 +642,6 @@ footer {
     margin-top: 2vh;
   }
 
-  .projects-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 }
 
 /* 1536px */
@@ -720,7 +715,4 @@ footer {
     }
   }
 
-  .projects-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
