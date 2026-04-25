@@ -399,8 +399,6 @@ footer {
     margin: 0 0 5px 5px;
   }
 
-  & img {}
-
   & p {
     margin: 5px;
   }
@@ -412,8 +410,9 @@ footer {
   flex-direction: column;
 
   & p {
-    border-top: 1px solid var(--bg-secondary);
+    border-top: 1px solid var(--accent);
     font-size: 1.2rem;
+    margin: 10px 2vw;
   }
 
   & span {
@@ -422,14 +421,26 @@ footer {
 
 }
 
+.project-hero .hero-text .project-status {
+  font-weight: 300;
+}
+
 
 .project-desc {
-  background-color: red;
+  background-color: var(--bg-primary);
+  font-size: 1.2rem;
+  padding: 5px 5px;
+  margin: 10px 0 0;
+  line-height: 1.4;
 }
 
 
 .project-status {
   margin: 0 0 5px 5px;
+}
+
+#project-btn {
+  margin: 3vh auto;
 }
 
 /* 768px */
