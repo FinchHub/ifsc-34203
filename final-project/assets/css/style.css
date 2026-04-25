@@ -30,7 +30,8 @@ p {
   font-weight: 300;
 }
 
-.hero {
+.hero,
+.project-hero {
   position: relative;
 }
 
@@ -320,14 +321,11 @@ footer {
 /* Without the >, this messes up the nav icons. With it, it only targets
 * the background. But it doesn't have that issue on the home page hero.
 * Not sure why. */
-.projects-hero>img {
+.projects-hero>img,
+.project-hero>img {
   height: 50vh;
   height: 50dvh;
-
 }
-
-.projects-img-overlay {}
-
 
 .project-list {
 
@@ -394,22 +392,41 @@ footer {
 
 /* Individual Project Page - Mobile */
 
-.project-container {
-  margin-top: 100px;
 
-  h1 {
+.project-container {
+
+  & h1 {
     margin: 0 0 5px 5px;
   }
 
-  img {
-    display: block;
-    margin: 5px auto;
-  }
+  & img {}
 
-  p {
+  & p {
     margin: 5px;
   }
+
 }
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+
+  & p {
+    border-top: 1px solid var(--bg-secondary);
+    font-size: 1.2rem;
+  }
+
+  & span {
+    font-weight: 500;
+  }
+
+}
+
+
+.project-desc {
+  background-color: red;
+}
+
 
 .project-status {
   margin: 0 0 5px 5px;
