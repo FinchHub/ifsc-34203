@@ -161,7 +161,7 @@ h2 {
 }
 
 .page-bg {
-  background: url("../img/plans_bg_low_opacity.webp");
+  background-image: url("../img/plans-50.webp");
   background-size: 200vh auto;
   background-position: -390px -150px;
   padding-bottom: 10px;
