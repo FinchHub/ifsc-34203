@@ -94,10 +94,10 @@ p {
 
   & li {
     margin: 10px 30px 10px 10px;
-    text-align: left;
+    text-align: end;
     list-style-type: none;
-    border-left: 2px solid var(--accent);
-    padding-left: 5px;
+    border-right: 2px solid var(--accent);
+    padding-right: 5px;
   }
 
   & li:last-child {
