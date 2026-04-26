@@ -316,6 +316,19 @@ footer {
   }
 }
 
+#career-btn.apply-btn-disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  background: var(--bg-secondary);
+  margin-top: 5px;
+}
+
+.apply-status {
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 0;
+}
+
 /* Projects Page - Mobile */
 
 /* Without the >, this messes up the nav icons. With it, it only targets
@@ -452,7 +465,8 @@ footer {
   margin: 0 0 5px 5px;
 }
 
-#project-btn {
+#project-btn,
+#career-btn {
   margin: 3vh auto;
 }
 
