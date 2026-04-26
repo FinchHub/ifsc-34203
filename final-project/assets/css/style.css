@@ -321,6 +321,18 @@ footer {
 /* Without the >, this messes up the nav icons. With it, it only targets
 * the background. But it doesn't have that issue on the home page hero.
 * Not sure why. */
+.secondary-hero-text {
+  & p {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  & h1 {
+    font-size: 2rem;
+  }
+}
+
+
 .projects-hero>img,
 .project-hero>img {
   height: 50vh;
@@ -413,10 +425,11 @@ footer {
     border-top: 1px solid var(--accent);
     font-size: 1.2rem;
     margin: 10px 2vw;
+    font-weight: 500;
   }
 
   & span {
-    font-weight: 500;
+    font-weight: 300;
   }
 
 }
@@ -634,7 +647,8 @@ footer {
   /* Used AI to help on the slide-in effect. I've done this before
 * and know I need to set up pseudos on the button and hover, but once
 * again, I can't ever remember exactly what I need on them. */
-  .hero-btn {
+  .hero-btn,
+  .page-btn {
     font-size: 2.5rem;
     margin: 15px auto auto 5px;
     z-index: 0;
@@ -643,7 +657,8 @@ footer {
     transition: color 0.3s ease;
   }
 
-  .hero-btn::before {
+  .hero-btn::before,
+  .page-btn::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -653,11 +668,13 @@ footer {
     z-index: -1;
   }
 
-  .hero-btn:hover {
+  .hero-btn:hover,
+  .page-btn:hover {
     color: #000;
   }
 
-  .hero-btn:hover::before {
+  .hero-btn:hover::before,
+  .page-btn:hover::before {
     transform: translateX(0);
   }
 
@@ -689,6 +706,23 @@ footer {
     margin-top: 2vh;
   }
 
+  .project-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+
+    & p {
+      font-size: 1.4rem;
+      border-top: 2px solid var(--accent);
+    }
+  }
+
+  div.project-desc {
+    margin: 5vh auto;
+    padding: 3vh 5vw;
+    max-width: 70%
+  }
+
 }
 
 /* 1536px */
@@ -700,6 +734,16 @@ footer {
 
     & h1 {
       font-size: clamp(5rem, 5vw, 15rem);
+    }
+  }
+
+  .secondary-hero-text {
+    & p {
+      font-size: clamp(3rem, 2.05vw, 5rem);
+    }
+
+    & h1 {
+      font-size: clamp(5rem, 3.4vw, 10rem);
     }
   }
 
@@ -734,6 +778,30 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(400px, 480px));
     max-width: 2000px;
     gap: 5rem;
+  }
+
+  .project-info,
+  .project-desc {
+    & p {
+      font-size: clamp(2rem, 1vw, 3rem);
+    }
+  }
+
+  div.project-info {
+    margin-top: 3vh;
+  }
+
+
+
+
+  .project-hero .hero-text {
+    & p {
+      font-size: clamp(3rem, 2.1vw, 6rem);
+    }
+
+    & h1 {
+      font-size: clamp(5rem, 2.8vw, 8rem);
+    }
   }
 
   .services {
