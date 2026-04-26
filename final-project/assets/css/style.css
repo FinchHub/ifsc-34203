@@ -861,7 +861,13 @@ footer {
 
   footer {
     & ul {
+      margin-left: auto;
+      margin-right: auto;
       gap: clamp(30px, 2.35vw, 100px);
+    }
+
+    & ul li {
+      margin: 0;
     }
 
     & ul li a,
