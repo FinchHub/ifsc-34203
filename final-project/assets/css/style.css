@@ -1,8 +1,6 @@
 /* 98% of this was written by myself without any suggestions or contributions
 * from AI. Where AI is used, I have explicitly mentioned it in comments. */
 
-/* Remember to do alt text on images. */
-
 :root {
   --accent: #a0522d;
   --bg-primary: #e5e5e5;
@@ -764,6 +762,15 @@ footer {
   .hero-btn {
     font-size: clamp(1rem, 2vw, 6rem);
     margin-left: 15px;
+  }
+
+  .navbar-top a img {
+    margin-top: 15px;
+    min-width: clamp(150px, 8.4vw, 230px);
+  }
+
+  .nav-links li a {
+    font-size: clamp(2rem, 1.7vw, 4rem);
   }
 
   h2 {
