@@ -1,64 +1,81 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doxa Construction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <script src="assets/js/project.js" defer></script>
+    <script src="assets/js/nav-script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Doxa Construction</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <link href="assets/css/style.css" rel="stylesheet" />
-  <script src="assets/js/project.js" defer></script>
-  <script src="assets/js/nav-script.js" defer></script>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-SQ84CLCCN0"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-<body>
-  <section class="hero project-hero">
-    <img class="project-hero-img" src="" alt="">
-    <div class="hero-img-overlay projects-img-overlay"></div>
+    gtag("config", "G-SQ84CLCCN0");
+  </script>
 
-    <nav class="navbar">
-      <div class="navbar-top" id="navbar-top">
-        <a href="index.html"><img src="assets/img/doxa-logo.png" alt="Doxa Construction Logo" /></a>
-        <a href="#" class="nav-mobile-btn" id="nav-btn"><img src="assets/img/hamburger-menu-ico.svg"
-            alt="Navigation Menu Icon" /></a>
-      </div>
-      <ul class="nav-links" id="nav-link-items">
+  <body>
+    <section class="hero project-hero">
+      <img class="project-hero-img" src="" alt="" />
+      <div class="hero-img-overlay projects-img-overlay"></div>
+
+      <nav class="navbar">
+        <div class="navbar-top" id="navbar-top">
+          <a href="index.html"
+            ><img src="assets/img/doxa-logo.png" alt="Doxa Construction Logo"
+          /></a>
+          <a href="#" class="nav-mobile-btn" id="nav-btn"
+            ><img
+              src="assets/img/hamburger-menu-ico.svg"
+              alt="Navigation Menu Icon"
+          /></a>
+        </div>
+        <ul class="nav-links" id="nav-link-items">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="careers.html">Careers</a></li>
+        </ul>
+      </nav>
+
+      <header class="hero-text">
+        <p class="project-status"></p>
+        <h1></h1>
+      </header>
+    </section>
+
+    <section class="project-container">
+      <div class="project-info"></div>
+      <div class="project-desc"></div>
+    </section>
+
+    <a href="projects.html" class="page-btn" id="project-btn">See More</a>
+
+    <footer>
+      <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="careers.html">Careers</a></li>
       </ul>
-    </nav>
-
-    <header class="hero-text">
-      <p class="project-status"></p>
-      <h1></h1>
-    </header>
-  </section>
-
-  <section class="project-container">
-    <div class="project-info"></div>
-    <div class="project-desc"></div>
-  </section>
-
-  <a href="projects.html" class="page-btn" id="project-btn">See More</a>
-
-  <footer>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="careers.html">Careers</a></li>
-    </ul>
-    <img src="assets/img/doxa-logo-comp.webp" alt="Doxa Construction Logo" />
-    <p id="copyright">©2026 Doxa Construction</p>
-    <p id="author">Website by <a href=".">Chance Crosson</a></p>
-  </footer>
-
-
-</body>
-
+      <img src="assets/img/doxa-logo-comp.webp" alt="Doxa Construction Logo" />
+      <p id="copyright">©2026 Doxa Construction</p>
+      <p id="author">Website by <a href=".">Chance Crosson</a></p>
+    </footer>
+  </body>
 </html>
